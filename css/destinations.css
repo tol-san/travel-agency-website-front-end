@@ -1,10 +1,4 @@
-/* ================================================
-   DESTINATIONS PAGE STYLES - Travel Agency
-   ================================================ */
 
-/* ================================================
-   FILTER PILLS
-   ================================================ */
 
 .filter-section {
     padding: var(--space-lg) 0;
@@ -424,10 +418,11 @@
     scroll-snap-align: start;
 }
 
-/* ================================================
-   RESPONSIVE
-   ================================================ */
 
+
+
+
+/* RESPONSIVE */
 @media (max-width: 991px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
