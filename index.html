@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover handpicked destinations and expertly crafted tours. Your next adventure starts here with trusted travel experiences worldwide."
+    />
+    <title>B&G Adventures</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <style>
+  .cta-btn-secondary:hover {
+    color: white;
+  }
+</style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg"
+      role="navigation"
+      aria-label="Main navigation"
+    >
+      <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand" href="index.html">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="20"
+              cy="20"
+              r="18"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <path
+              d="M12 20C12 15 16 10 20 10C24 10 28 15 28 20C28 25 24 30 20 30"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
+            <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
+          </svg>
+          <span class="brand-text">B&amp;G</span>
+        </a>
+
+        <!-- MOBILE TOGGLE -->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list fs-4"></i>
+        </button>
+
+        <!-- DESKTOP NAVIGATION -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="destinations.html"
+                id="destinationsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Destinations
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
+                <li>
+                  <a class="dropdown-item" href="destinations.html?region=asia"
+                    >Asia</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="destinations.html?region=europe"
+                    >Europe</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="destinations.html?region=americas"
+                    >Americas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="destinations.html?region=africa"
+                    >Africa</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="destinations.html?region=oceania"
+                    >Oceania</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="destinations.html">View All</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="tours.html"
+                id="toursDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tours
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="toursDropdown">
+                <li>
+                  <a class="dropdown-item" href="tours.html?category=adventure"
+                    >Adventure</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="tours.html?category=cultural"
+                    >Cultural</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="tours.html?category=luxury"
+                    >Luxury</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="tours.html?category=family"
+                    >Family</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="tours.html">View All Tours</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- NAVIGATION ACTIONS -->
+        <div class="navbar-actions d-none d-lg-flex">
+          <button
+            class="navbar-icon-btn btn btn-link text-dark p-0 me-3 shadow-none"
+            aria-label="Search"
+          >
+            <i class="bi bi-search fs-5"></i>
+          </button>
+          <a href="login.html" class="btn btn-primary btn-sm">Sign In</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MOBILE OFF-CANVAS MENU -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="mobileMenu"
+      aria-labelledby="mobileMenuLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileMenuLabel">
+          <a class="navbar-brand" href="index.html">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="20"
+                cy="20"
+                r="18"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M12 20C12 15 16 10 20 10C24 10 28 15 28 20C28 25 24 30 20 30"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
+              <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
+            </svg>
+            <span class="brand-text">B&amp;G</span>
+          </a>
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="destinations.html">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tours.html">Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <hr />
+        <div class="d-flex gap-3 align-items-center mt-3">
+          <button class="navbar-icon-btn text-dark p-2" aria-label="Search">
+            <i class="bi bi-search fs-5"></i>
+          </button>
+          <a href="login.html" class="btn btn-primary flex-grow-1">Sign In</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+      <section class="hero" aria-label="Welcome to TravelCo">
+        <div class="hero-bg ken-burns">
+          <img
+            src="assets/images/hero-main.png"
+            alt="Stunning tropical beach paradise with turquoise waters"
+          />
+        </div>
+        <div class="hero-overlay hero-overlay-dark"></div>
+
+        <div class="hero-content">
+          <h1 class="hero-title">Your Next Adventure Starts Here</h1>
+          <p class="hero-subtitle">
+            Discover handpicked destinations and expertly crafted tours—trusted
+            by 50,000+ travelers worldwide.
+          </p>
+
+          <!-- SEARCH FORM -->
+          <div class="hero-search">
+            <form
+              class="hero-search-form-modern"
+              role="search"
+              aria-label="Search trips"
+            >
+              <div class="search-input-group">
+                <i class="bi bi-geo-alt search-icon"></i>
+                <input
+                  type="text"
+                  class="search-input"
+                  id="search-destination"
+                  placeholder="Where to?"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="search-input-group">
+                <i class="bi bi-calendar search-icon"></i>
+                <input type="date" class="search-input" id="search-date" />
+              </div>
+              <div class="search-input-group">
+                <i class="bi bi-people search-icon"></i>
+                <select class="search-input" id="search-travelers">
+                  <option value="1">1 Traveler</option>
+                  <option value="2" selected>2 Travelers</option>
+                  <option value="3">3 Travelers</option>
+                  <option value="4">4 Travelers</option>
+                  <option value="5+">5+ Travelers</option>
+                </select>
+              </div>
+              <button type="submit" class="hero-search-btn-modern">
+                <i class="bi bi-search"></i>
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero-scroll" aria-hidden="true">
+          <div class="hero-scroll-text">Scroll</div>
+          <i class="bi bi-chevron-down hero-scroll-icon"></i>
+        </div>
+      </section>
+
+      <!-- FEATURED DESTINATIONS SECTION -->
+      <section
+        class="section destinations-section"
+        aria-labelledby="destinations-title"
+      >
+        <div class="container">
+          <div class="section-title">
+            <h2 id="destinations-title">Featured Destinations</h2>
+            <p>
+              Explore the world's most stunning locations, handpicked by our
+              travel experts.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Destination Card 1: Bali -->
+            <div class="col-lg-3 col-md-6">
+              <a
+                href="destination-detail.html?id=bali"
+                class="text-decoration-none"
+              >
+                <article
+                  class="destination-card"
+                  aria-label="Explore Bali, Indonesia"
+                >
+                  <div class="destination-card-img">
+                    <img
+                      src="assets/images/bali.png"
+                      alt="Emerald rice terraces and temples in Bali"
+                      loading="lazy"
+                    />
+                    <span class="destination-card-badge">Trending</span>
+                  </div>
+                  <div class="destination-card-body">
+                    <h3 class="destination-card-title">Bali</h3>
+                    <p class="destination-card-country">
+                      <i class="bi bi-geo-alt"></i> Indonesia
+                    </p>
+                    <div class="destination-card-tours">
+                      <span class="destination-card-count">24 Tours</span>
+                      <span class="destination-card-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
+
+            <!-- Destination Card 2: Santorini -->
+            <div class="col-lg-3 col-md-6">
+              <a
+                href="destination-detail.html?id=santorini"
+                class="text-decoration-none"
+              >
+                <article
+                  class="destination-card"
+                  aria-label="Explore Santorini, Greece"
+                >
+                  <div class="destination-card-img">
+                    <img
+                      src="assets/images/santorini.png"
+                      alt="White-washed buildings with blue domes in Santorini"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="destination-card-body">
+                    <h3 class="destination-card-title">Santorini</h3>
+                    <p class="destination-card-country">
+                      <i class="bi bi-geo-alt"></i> Greece
+                    </p>
+                    <div class="destination-card-tours">
+                      <span class="destination-card-count">18 Tours</span>
+                      <span class="destination-card-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
+
+            <!-- Destination Card 3: Kyoto -->
+            <div class="col-lg-3 col-md-6">
+              <a
+                href="destination-detail.html?id=kyoto"
+                class="text-decoration-none"
+              >
+                <article
+                  class="destination-card"
+                  aria-label="Explore Kyoto, Japan"
+                >
+                  <div class="destination-card-img">
+                    <img
+                      src="assets/images/kyoto.png"
+                      alt="Traditional torii gates in Kyoto, Japan"
+                      loading="lazy"
+                    />
+                    <span class="destination-card-badge">New</span>
+                  </div>
+                  <div class="destination-card-body">
+                    <h3 class="destination-card-title">Kyoto</h3>
+                    <p class="destination-card-country">
+                      <i class="bi bi-geo-alt"></i> Japan
+                    </p>
+                    <div class="destination-card-tours">
+                      <span class="destination-card-count">15 Tours</span>
+                      <span class="destination-card-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
+
+            <!-- Destination Card 4: Machu Picchu -->
+            <div class="col-lg-3 col-md-6">
+              <a
+                href="destination-detail.html?id=machu-picchu"
+                class="text-decoration-none"
+              >
+                <article
+                  class="destination-card"
+                  aria-label="Explore Machu Picchu, Peru"
+                >
+                  <div class="destination-card-img">
+                    <img
+                      src="assets/images/machu-picchu.png"
+                      alt="Ancient Incan citadel of Machu Picchu"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="destination-card-body">
+                    <h3 class="destination-card-title">Machu Picchu</h3>
+                    <p class="destination-card-country">
+                      <i class="bi bi-geo-alt"></i> Peru
+                    </p>
+                    <div class="destination-card-tours">
+                      <span class="destination-card-count">12 Tours</span>
+                      <span class="destination-card-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <a href="destinations.html" class="btn btn-secondary">
+              Explore All Destinations
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- POPULAR TOURS SECTION -->
+      <section class="section tours-section" aria-labelledby="tours-title">
+        <div class="container">
+          <div class="section-title">
+            <h2 id="tours-title">Popular Tours</h2>
+            <p>Best-selling adventures loved by travelers around the world.</p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Tour Card 1 -->
+            <div class="col-lg-4 col-md-6">
+              <article class="tour-card" aria-label="Bali Adventure Tour">
+                <div class="tour-card-img">
+                  <img
+                    src="assets/images/bali.png"
+                    alt="Bali adventure with rice terraces and temples"
+                    loading="lazy"
+                  />
+                  <span class="tour-card-badge">Best Seller</span>
+                  <button
+                    class="tour-card-wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+                <div class="tour-card-body">
+                  <div class="tour-card-meta">
+                    <span><i class="bi bi-clock"></i> 7 Days</span>
+                    <span><i class="bi bi-people"></i> Max 12</span>
+                  </div>
+                  <h3 class="tour-card-title">
+                    Bali Explorer: Temples, Rice Terraces & Beaches
+                  </h3>
+                  <div class="tour-card-rating">
+                    <div class="tour-card-stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <span class="tour-card-rating-text">4.8 (234 reviews)</span>
+                  </div>
+                  <div class="tour-card-footer">
+                    <div class="tour-card-price">
+                      $1,299 <span>/ person</span>
+                    </div>
+                    <a
+                      href="tour-detail.html?id=bali-explorer"
+                      class="tour-card-btn"
+                      >View Tour</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tour Card 2 -->
+            <div class="col-lg-4 col-md-6">
+              <article
+                class="tour-card"
+                aria-label="Greece Island Hopping Tour"
+              >
+                <div class="tour-card-img">
+                  <img
+                    src="assets/images/santorini.png"
+                    alt="Greek islands with blue domes"
+                    loading="lazy"
+                  />
+                  <button
+                    class="tour-card-wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+                <div class="tour-card-body">
+                  <div class="tour-card-meta">
+                    <span><i class="bi bi-clock"></i> 10 Days</span>
+                    <span><i class="bi bi-people"></i> Max 16</span>
+                  </div>
+                  <h3 class="tour-card-title">
+                    Greek Island Hopper: Santorini, Mykonos & Athens
+                  </h3>
+                  <div class="tour-card-rating">
+                    <div class="tour-card-stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="tour-card-rating-text">4.9 (189 reviews)</span>
+                  </div>
+                  <div class="tour-card-footer">
+                    <div class="tour-card-price">
+                      $2,499 <span>/ person</span>
+                    </div>
+                    <a
+                      href="tour-detail.html?id=greece-islands"
+                      class="tour-card-btn"
+                      >View Tour</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tour Card 3 -->
+            <div class="col-lg-4 col-md-6">
+              <article class="tour-card" aria-label="Japan Cultural Journey">
+                <div class="tour-card-img">
+                  <img
+                    src="assets/images/kyoto.png"
+                    alt="Traditional Japanese torii gates"
+                    loading="lazy"
+                  />
+                  <span class="tour-card-badge">Limited</span>
+                  <button
+                    class="tour-card-wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+                <div class="tour-card-body">
+                  <div class="tour-card-meta">
+                    <span><i class="bi bi-clock"></i> 12 Days</span>
+                    <span><i class="bi bi-people"></i> Max 10</span>
+                  </div>
+                  <h3 class="tour-card-title">
+                    Japan Cultural Journey: Tokyo, Kyoto & Osaka
+                  </h3>
+                  <div class="tour-card-rating">
+                    <div class="tour-card-stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="tour-card-rating-text">5.0 (156 reviews)</span>
+                  </div>
+                  <div class="tour-card-footer">
+                    <div class="tour-card-price">
+                      $3,199 <span>/ person</span>
+                    </div>
+                    <a
+                      href="tour-detail.html?id=japan-cultural"
+                      class="tour-card-btn"
+                      >View Tour</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tour Card 4 -->
+            <div class="col-lg-4 col-md-6">
+              <article class="tour-card" aria-label="Peru Adventure Trek">
+                <div class="tour-card-img">
+                  <img
+                    src="assets/images/machu-picchu.png"
+                    alt="Machu Picchu ancient ruins"
+                    loading="lazy"
+                  />
+                  <button
+                    class="tour-card-wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+                <div class="tour-card-body">
+                  <div class="tour-card-meta">
+                    <span><i class="bi bi-clock"></i> 8 Days</span>
+                    <span><i class="bi bi-people"></i> Max 8</span>
+                  </div>
+                  <h3 class="tour-card-title">
+                    Inca Trail Trek: Sacred Valley to Machu Picchu
+                  </h3>
+                  <div class="tour-card-rating">
+                    <div class="tour-card-stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <span class="tour-card-rating-text">4.7 (98 reviews)</span>
+                  </div>
+                  <div class="tour-card-footer">
+                    <div class="tour-card-price">
+                      $1,899 <span>/ person</span>
+                    </div>
+                    <a
+                      href="tour-detail.html?id=peru-trek"
+                      class="tour-card-btn"
+                      >View Tour</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tour Card 5 -->
+            <div class="col-lg-4 col-md-6">
+              <article class="tour-card" aria-label="Safari Adventure">
+                <div class="tour-card-img">
+                  <img
+                    src="assets/images/tour-adventure.png"
+                    alt="African safari adventure"
+                    loading="lazy"
+                  />
+                  <span class="tour-card-badge">Family</span>
+                  <button
+                    class="tour-card-wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+                <div class="tour-card-body">
+                  <div class="tour-card-meta">
+                    <span><i class="bi bi-clock"></i> 9 Days</span>
+                    <span><i class="bi bi-people"></i> Max 14</span>
+                  </div>
+                  <h3 class="tour-card-title">
+                    African Safari: Kenya & Tanzania Wildlife Adventure
+                  </h3>
+                  <div class="tour-card-rating">
+                    <div class="tour-card-stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="tour-card-rating-text">4.9 (87 reviews)</span>
+                  </div>
+                  <div class="tour-card-footer">
+                    <div class="tour-card-price">
+                      $4,299 <span>/ person</span>
+                    </div>
+                    <a
+                      href="tour-detail.html?id=africa-safari"
+                      class="tour-card-btn"
+                      >View Tour</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tour Card 6 -->
+            <div class="col-lg-4 col-md-6">
+              <article class="tour-card" aria-label="Maldives Escape">
+                <div class="tour-card-img">
+                  <img
+                    src="assets/images/hero-main.png"
+                    alt="Maldives overwater bungalows"
+                    loading="lazy"
+                  />
+                  <span class="tour-card-badge">Luxury</span>
+                  <button
+                    class="tour-card-wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+                <div class="tour-card-body">
+                  <div class="tour-card-meta">
+                    <span><i class="bi bi-clock"></i> 6 Days</span>
+                    <span><i class="bi bi-people"></i> Max 2</span>
+                  </div>
+                  <h3 class="tour-card-title">
+                    Maldives Luxury Escape: Overwater Villa Retreat
+                  </h3>
+                  <div class="tour-card-rating">
+                    <div class="tour-card-stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="tour-card-rating-text">5.0 (64 reviews)</span>
+                  </div>
+                  <div class="tour-card-footer">
+                    <div class="tour-card-price">
+                      $5,999 <span>/ person</span>
+                    </div>
+                    <a
+                      href="tour-detail.html?id=maldives-escape"
+                      class="tour-card-btn"
+                      >View Tour</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <a href="tours.html" class="btn btn-secondary">
+              View All Tours
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY TRAVEL WITH US SECTION -->
+      <section
+        class="section features-section"
+        aria-labelledby="features-title"
+      >
+        <div class="container">
+          <div class="section-title">
+            <h2 id="features-title">Why Travel With Us</h2>
+            <p>
+              Trusted by 50,000+ travelers for unforgettable journeys worldwide.
+            </p>
+          </div>
+
+          <div class="row">
+            <!-- Feature 1 -->
+            <div class="col-lg-3 col-md-6">
+              <article class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-compass fs-2"></i>
+                </div>
+                <h3 class="feature-title">Expert Guides</h3>
+                <p class="feature-text">
+                  Local experts with deep knowledge of each destination,
+                  ensuring authentic and insightful experiences.
+                </p>
+              </article>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="col-lg-3 col-md-6">
+              <article class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-tag fs-2"></i>
+                </div>
+                <h3 class="feature-title">Best Prices</h3>
+                <p class="feature-text">
+                  Competitive pricing with no hidden fees. Price match guarantee
+                  on all bookings.
+                </p>
+              </article>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col-lg-3 col-md-6">
+              <article class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-headset fs-2"></i>
+                </div>
+                <h3 class="feature-title">24/7 Support</h3>
+                <p class="feature-text">
+                  Round-the-clock assistance before, during, and after your
+                  trip. We're always here for you.
+                </p>
+              </article>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="col-lg-3 col-md-6">
+              <article class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-shield-check fs-2"></i>
+                </div>
+                <h3 class="feature-title">Secure Booking</h3>
+                <p class="feature-text">
+                  SSL-encrypted payments and flexible cancellation policies for
+                  peace of mind.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS SECTION -->
+      <section
+        class="section testimonials-section"
+        aria-labelledby="testimonials-title"
+      >
+        <div class="container">
+          <div class="section-title">
+            <h2 id="testimonials-title" style="color: white">
+              What Our Travelers Say
+            </h2>
+            <p style="color: rgba(255, 255, 255, 0.8)">
+              Real stories from real adventures.
+            </p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Our Bali trip was seamless from start to finish. The local
+                  guides knew hidden spots we'd never find alone. Already
+                  planning our next adventure!"
+                </blockquote>
+                <img
+                  src="./assets/images/TESTIMONIALS-1.png"
+                  alt="Sarah T."
+                  class="testimonial-avatar"
+                />
+                <p class="testimonial-author">Drooling in your sleep</p>
+                <p class="testimonial-trip">Bali Explorer Tour</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-controls">
+            <button aria-label="Previous testimonial">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button aria-label="Next testimonial">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BANNER SECTION -->
+      <section class="cta-section" aria-labelledby="cta-title">
+        <div class="container">
+          <h2 id="cta-title" class="cta-title">
+            Ready for Your Next Adventure?
+          </h2>
+          <p class="cta-text">
+            Start planning your dream trip today. Our travel experts are ready
+            to help you create unforgettable memories.
+          </p>
+          <div class="cta-buttons">
+            <a href="tours.html" class="cta-btn-primary">
+              <i class="bi bi-search me-2"></i>
+              Explore Tours
+            </a>
+            <a href="contact.html" class="cta-btn-secondary">
+              <i class="bi bi-chat-dots me-2"></i>
+              Talk to an Expert
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-main">
+        <div class="row g-4">
+          <!-- Brand Column -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-brand">
+              <div class="footer-brand-logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <circle
+                    cx="20"
+                    cy="20"
+                    r="18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12 20C12 15 16 10 20 10C24 10 28 15 28 20C28 25 24 30 20 30"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
+                  <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
+                </svg>
+                TravelCo
+              </div>
+              <p>
+                Discover handpicked destinations and expertly crafted
+                tours—trusted by 50,000+ travelers worldwide.
+              </p>
+              <div class="footer-social">
+                <a href="#" aria-label="Facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="#" aria-label="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" aria-label="Twitter"
+                  ><i class="bi bi-twitter-x"></i
+                ></a>
+                <a href="#" aria-label="YouTube"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Explore Column -->
+          <div class="col-lg-2 col-md-6 footer-column">
+            <h6 class="footer-heading">Explore</h6>
+            <ul class="footer-links">
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="tours.html">Tours</a></li>
+              <li><a href="tours.html?category=adventure">Adventure</a></li>
+              <li><a href="tours.html?category=luxury">Luxury Travel</a></li>
+              <li><a href="tours.html?category=family">Family Trips</a></li>
+            </ul>
+          </div>
+
+          <!-- Support Column -->
+          <div class="col-lg-2 col-md-6 footer-column">
+            <h6 class="footer-heading">Support</h6>
+            <ul class="footer-links">
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="blog.html">Travel Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter Column -->
+          <div class="col-lg-4 col-md-6 footer-column">
+            <div class="footer-newsletter">
+              <h6 class="footer-heading">Get Travel Inspiration</h6>
+              <p>Subscribe for exclusive deals, trip ideas, and travel tips.</p>
+              <form class="newsletter-form" aria-label="Newsletter signup">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  aria-label="Email address"
+                  required
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom-content">
+            <p class="footer-copyright">
+              © 2026 TravelCo. All rights reserved.
+            </p>
+            <div class="footer-legal">
+              <a href="privacy.html">Privacy Policy</a>
+              <a href="terms.html">Terms of Service</a>
+              <a href="cookies.html">Cookie Policy</a>
+            </div>
+            <div class="footer-selectors">
+              <button class="footer-selector" aria-label="Select language">
+                <i class="bi bi-globe"></i> English
+              </button>
+              <button class="footer-selector" aria-label="Select currency">
+                <i class="bi bi-currency-dollar"></i> USD
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

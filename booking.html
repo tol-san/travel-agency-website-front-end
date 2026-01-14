@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Securely book your dream vacation with TravelCo.">
+    <title>Checkout - TravelCo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <style>
+        .checkout-page {
+            padding-top: 100px;
+            padding-bottom: 80px;
+            background-color: var(--color-neutral-100);
+        }
+
+        .checkout-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .checkout-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            padding: var(--space-xl);
+            margin-bottom: var(--space-lg);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-md);
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background: var(--color-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-right: var(--space-md);
+        }
+
+        .trip-summary-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            position: sticky;
+            top: 100px;
+        }
+
+        .trip-image {
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .summary-details {
+            padding: var(--space-lg);
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: var(--space-sm);
+            color: var(--color-neutral-500);
+        }
+
+        .summary-total {
+            display: flex;
+            justify-content: space-between;
+            margin-top: var(--space-md);
+            padding-top: var(--space-md);
+            border-top: 1px solid var(--color-neutral-200);
+            font-weight: 700;
+            font-size: var(--size-h5);
+            color: var(--color-neutral-900);
+        }
+
+        .payment-method {
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--space-sm);
+            transition: all 0.2s;
+        }
+
+        .payment-method.active {
+            border-color: var(--color-primary);
+            background: rgba(13, 110, 253, 0.05);
+        }
+
+        .payment-method i {
+            font-size: 1.5rem;
+            margin-right: var(--space-md);
+            color: var(--color-neutral-500);
+        }
+
+        .payment-method.active i {
+            color: var(--color-primary);
+        }
+    </style>
+</head>
+
+<body class="checkout-page">
+
+    <!-- NAVBAR (Simplified) -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                    <path d="M12 20C12 15 16 10 20 10C24 10 28 15 28 20C28 25 24 30 20 30" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" />
+                    <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
+                    <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
+                </svg>
+                TravelCo
+            </a>
+            <span class="navbar-text ms-auto text-muted">Secure Checkout <i class="bi bi-lock-fill"></i></span>
+        </div>
+    </nav>
+
+    <div class="container checkout-container">
+        <div class="row">
+            <div class="col-lg-8">
+
+                <!-- Step 1: Traveler Details -->
+                <div class="checkout-card">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <h2 class="h4 mb-0">Traveler Details</h2>
+                    </div>
+                    <form id="checkout-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-control" value="Demo" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-control" value="User" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" value="demo@example.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5 class="mb-3">Additional Travelers</h5>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="addTraveler">
+                                <label class="form-check-label" for="addTraveler">
+                                    I'm booking for others too
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Step 2: Payment -->
+                <div class="checkout-card">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <h2 class="h4 mb-0">Payment Method</h2>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="payment-method active" onclick="selectPayment(this)">
+                            <i class="bi bi-credit-card"></i>
+                            <div>
+                                <strong>Credit Card</strong>
+                                <div class="small text-muted">Visa, Mastercard, Amex</div>
+                            </div>
+                        </div>
+                        <div class="payment-method" onclick="selectPayment(this)">
+                            <i class="bi bi-paypal"></i>
+                            <div>
+                                <strong>PayPal</strong>
+                                <div class="small text-muted">Pay securely with your PayPal account</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label class="form-label">Card Number</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-credit-card"></i></span>
+                                <input type="text" class="form-control" placeholder="0000 0000 0000 0000" id="cardNum">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Expiration Date</label>
+                            <input type="text" class="form-control" placeholder="MM/YY">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">CVV</label>
+                            <input type="text" class="form-control" placeholder="123">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-lg w-100 mb-4" onclick="completeBooking()">
+                    Complete Booking <i class="bi bi-arrow-right ms-2"></i>
+                </button>
+
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Trip Summary -->
+                <div class="trip-summary-card">
+                    <img src="assets/images/bali.png" alt="Bali" class="trip-image">
+                    <div class="summary-details">
+                        <h5 class="mb-3">Bali Explorer</h5>
+
+                        <div class="summary-row">
+                            <span class="text-dark"><i class="bi bi-calendar-event me-2"></i> Date</span>
+                            <span>Jan 15, 2026</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="text-dark"><i class="bi bi-people me-2"></i> Travelers</span>
+                            <span>2 Adults</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="text-dark"><i class="bi bi-clock me-2"></i> Duration</span>
+                            <span>7 Days</span>
+                        </div>
+
+                        <hr class="my-3 text-secondary">
+
+                        <div class="summary-row">
+                            <span>Tour Price x 2</span>
+                            <span>$2,598</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Taxes & Fees</span>
+                            <span>$150</span>
+                        </div>
+
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <span class="text-primary">$2,748</span>
+                        </div>
+
+                        <div class="mt-3 small text-muted text-center">
+                            <i class="bi bi-shield-lock-fill me-1"></i> Secure SSL Encryption
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 text-muted small">
+        <div class="container">
+            <p>&copy; 2026 TravelCo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function selectPayment(element) {
+            document.querySelectorAll('.payment-method').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+        function completeBooking() {
+            // Simulate processing
+            const btn = document.querySelector('button[onclick="completeBooking()"]');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Processing...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                window.location.href = 'confirmation.html';
+            }, 2000);
+        }
+
+        // Formatting for card number (simple demo)
+        document.getElementById('cardNum').addEventListener('input', function (e) {
+            e.target.value = e.target.value.replace(/[^\d]/g, '').replace(/(.{4})/g, '$1 ').trim();
+        });
+    </script>
+</body>
+
+</html>

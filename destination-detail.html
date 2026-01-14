@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Bali, Indonesia - Emerald rice terraces, sacred temples, and sunset beaches. Discover tours and plan your Bali adventure with TravelCo.">
+    <title>Bali, Indonesia - TravelCo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/destinations.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                    <path d="M12 20C12 15 16 10 20 10C24 10 28 15 28 20C28 25 24 30 20 30" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" />
+                    <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
+                    <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
+                </svg>
+                <span class="brand-text">B&amp;G</span>
+            </a>
+
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-4"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-actions d-none d-lg-flex">
+                <button class="navbar-icon-btn btn btn-link text-dark p-0 me-3 shadow-none" aria-label="Search">
+                    <i class="bi bi-search fs-5"></i>
+                </button>
+                <a href="login.html" class="btn btn-primary btn-sm">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">TravelCo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="destinations.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+
+        <!-- DESTINATION HERO -->
+        <section class="destination-hero">
+            <div class="destination-hero-bg">
+                <img src="assets/images/bali.png" alt="Beautiful rice terraces and temples in Bali, Indonesia">
+            </div>
+            <div class="destination-hero-overlay"></div>
+            <div class="destination-hero-content">
+                <div class="container">
+                    <nav aria-label="Breadcrumb" class="mb-3">
+                        <ol class="breadcrumb"
+                            style="--bs-breadcrumb-divider-color: rgba(255,255,255,0.6); --bs-breadcrumb-item-active-color: white;">
+                            <li class="breadcrumb-item"><a href="index.html"
+                                    style="color: rgba(255,255,255,0.8);">Home</a></li>
+                            <li class="breadcrumb-item"><a href="destinations.html"
+                                    style="color: rgba(255,255,255,0.8);">Destinations</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Bali</li>
+                        </ol>
+                    </nav>
+                    <h1>Bali</h1>
+                    <p class="destination-hero-country">
+                        <i class="bi bi-geo-alt"></i> Indonesia, Asia
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUICK STATS -->
+        <section class="destination-stats">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="bi bi-calendar-event"></i></div>
+                            <div class="stat-content">
+                                <h4>Best Time</h4>
+                                <p>Apr - Oct</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="bi bi-translate"></i></div>
+                            <div class="stat-content">
+                                <h4>Language</h4>
+                                <p>Indonesian</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="bi bi-currency-exchange"></i></div>
+                            <div class="stat-content">
+                                <h4>Currency</h4>
+                                <p>IDR (Rupiah)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="bi bi-clock"></i></div>
+                            <div class="stat-content">
+                                <h4>Timezone</h4>
+                                <p>GMT+8</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OVERVIEW SECTION -->
+        <section class="destination-overview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2 class="mb-4">About Bali</h2>
+                        <div class="destination-description">
+                            <p>Bali, often called the "Island of the Gods," is a tropical paradise that captivates
+                                visitors with its unique blend of stunning natural beauty, rich cultural heritage, and
+                                spiritual traditions. From terraced rice paddies that cascade down volcanic hillsides to
+                                ancient temples perched on clifftops overlooking the sea, Bali offers experiences that
+                                nourish both body and soul.</p>
+
+                            <p>The island's culture is deeply rooted in Hindu traditions, visible in the countless
+                                temples, daily offerings, and colorful ceremonies that punctuate everyday life. Whether
+                                you're watching a traditional Kecak dance at sunset, participating in a purification
+                                ceremony, or simply observing locals prepare offerings, you'll find Bali's spirituality
+                                infectious.</p>
+
+                            <p>Beyond its cultural treasures, Bali offers world-class surfing at beaches like Uluwatu
+                                and Padang Padang, exceptional diving around the USAT Liberty shipwreck, and endless
+                                opportunities for yoga and wellness retreats. The island's culinary scene ranges from
+                                humble warungs serving authentic nasi goreng to fine-dining establishments helmed by
+                                internationally acclaimed chefs.</p>
+                        </div>
+
+                        <!-- Things To Do Preview -->
+                        <h3 class="mt-5 mb-4">Top Things To Do</h3>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <article class="activity-card">
+                                    <div class="activity-card-img">
+                                        <img src="assets/images/bali.png" alt="Tegallalang Rice Terraces"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="activity-card-body">
+                                        <span class="activity-type">Nature</span>
+                                        <h3>Tegallalang Rice Terraces</h3>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-4">
+                                <article class="activity-card">
+                                    <div class="activity-card-img">
+                                        <img src="assets/images/kyoto.png" alt="Uluwatu Temple" loading="lazy">
+                                    </div>
+                                    <div class="activity-card-body">
+                                        <span class="activity-type">Culture</span>
+                                        <h3>Uluwatu Temple & Kecak</h3>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-4">
+                                <article class="activity-card">
+                                    <div class="activity-card-img">
+                                        <img src="assets/images/hero-main.png" alt="Beach surfing" loading="lazy">
+                                    </div>
+                                    <div class="activity-card-body">
+                                        <span class="activity-type">Adventure</span>
+                                        <h3>Surfing at Padang Padang</h3>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SIDEBAR -->
+                    <div class="col-lg-4">
+                        <aside class="destination-sidebar">
+                            <!-- Book CTA -->
+                            <div class="sidebar-card" style="background: var(--color-primary); color: white;">
+                                <h4 style="color: white;"><i class="bi bi-airplane"></i> Ready to Explore?</h4>
+                                <p style="opacity: 0.9; margin-bottom: var(--space-md);">24 tours available in Bali
+                                    starting from $899</p>
+                                <a href="tours.html?destination=bali" class="btn btn-lg w-100"
+                                    style="background: white; color: var(--color-primary);">
+                                    View Bali Tours
+                                </a>
+                            </div>
+
+                            <!-- Quick Facts -->
+                            <div class="sidebar-card">
+                                <h4><i class="bi bi-info-circle"></i> Quick Facts</h4>
+                                <ul class="quick-facts">
+                                    <li><span>Capital</span><span>Denpasar</span></li>
+                                    <li><span>Population</span><span>4.2 million</span></li>
+                                    <li><span>Area</span><span>5,780 km²</span></li>
+                                    <li><span>Religion</span><span>Hindu (83%)</span></li>
+                                    <li><span>Visa</span><span>On arrival (30 days)</span></li>
+                                </ul>
+                            </div>
+
+                            <!-- Map -->
+                            <div class="sidebar-card">
+                                <h4><i class="bi bi-map"></i> Location</h4>
+                                <div class="map-placeholder">
+                                    <i class="bi bi-geo-alt-fill fs-1"></i>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section class="destination-gallery bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Photo Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/images/bali.png" alt="Bali rice terraces" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/kyoto.png" alt="Bali temple" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/hero-main.png" alt="Bali beach" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/santorini.png" alt="Bali sunset" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/machu-picchu.png" alt="Bali culture" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AVAILABLE TOURS -->
+        <section class="available-tours">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="mb-0">Available Tours in Bali</h2>
+                    <a href="tours.html?destination=bali" class="btn btn-secondary">View All</a>
+                </div>
+
+                <div class="tours-scroll">
+                    <!-- Tour 1 -->
+                    <article class="tour-card">
+                        <div class="tour-card-img">
+                            <img src="assets/images/bali.png" alt="Bali Explorer Tour" loading="lazy">
+                            <span class="tour-card-badge">Best Seller</span>
+                        </div>
+                        <div class="tour-card-body">
+                            <div class="tour-card-meta">
+                                <span><i class="bi bi-clock"></i> 7 Days</span>
+                                <span><i class="bi bi-people"></i> Max 12</span>
+                            </div>
+                            <h3 class="tour-card-title">Bali Explorer: Temples, Rice Terraces & Beaches</h3>
+                            <div class="tour-card-rating">
+                                <div class="tour-card-stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i>
+                                </div>
+                                <span class="tour-card-rating-text">4.8 (234 reviews)</span>
+                            </div>
+                            <div class="tour-card-footer">
+                                <div class="tour-card-price">$1,299 <span>/ person</span></div>
+                                <a href="tour-detail.html" class="tour-card-btn">View Tour</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tour 2 -->
+                    <article class="tour-card">
+                        <div class="tour-card-img">
+                            <img src="assets/images/hero-main.png" alt="Bali Wellness Retreat" loading="lazy">
+                            <span class="tour-card-badge">Wellness</span>
+                        </div>
+                        <div class="tour-card-body">
+                            <div class="tour-card-meta">
+                                <span><i class="bi bi-clock"></i> 5 Days</span>
+                                <span><i class="bi bi-people"></i> Max 8</span>
+                            </div>
+                            <h3 class="tour-card-title">Bali Wellness Retreat: Yoga & Spa Experience</h3>
+                            <div class="tour-card-rating">
+                                <div class="tour-card-stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="tour-card-rating-text">5.0 (89 reviews)</span>
+                            </div>
+                            <div class="tour-card-footer">
+                                <div class="tour-card-price">$1,599 <span>/ person</span></div>
+                                <a href="tour-detail.html" class="tour-card-btn">View Tour</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tour 3 -->
+                    <article class="tour-card">
+                        <div class="tour-card-img">
+                            <img src="assets/images/tour-adventure.png" alt="Bali Adventure Tour" loading="lazy">
+                        </div>
+                        <div class="tour-card-body">
+                            <div class="tour-card-meta">
+                                <span><i class="bi bi-clock"></i> 10 Days</span>
+                                <span><i class="bi bi-people"></i> Max 10</span>
+                            </div>
+                            <h3 class="tour-card-title">Bali & Komodo: Islands Adventure</h3>
+                            <div class="tour-card-rating">
+                                <div class="tour-card-stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i>
+                                </div>
+                                <span class="tour-card-rating-text">4.7 (156 reviews)</span>
+                            </div>
+                            <div class="tour-card-footer">
+                                <div class="tour-card-price">$2,199 <span>/ person</span></div>
+                                <a href="tour-detail.html" class="tour-card-btn">View Tour</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tour 4 -->
+                    <article class="tour-card">
+                        <div class="tour-card-img">
+                            <img src="assets/images/kyoto.png" alt="Bali Cultural Journey" loading="lazy">
+                            <span class="tour-card-badge">Cultural</span>
+                        </div>
+                        <div class="tour-card-body">
+                            <div class="tour-card-meta">
+                                <span><i class="bi bi-clock"></i> 6 Days</span>
+                                <span><i class="bi bi-people"></i> Max 14</span>
+                            </div>
+                            <h3 class="tour-card-title">Sacred Bali: Temples & Traditions</h3>
+                            <div class="tour-card-rating">
+                                <div class="tour-card-stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="tour-card-rating-text">4.9 (112 reviews)</span>
+                            </div>
+                            <div class="tour-card-footer">
+                                <div class="tour-card-price">$1,149 <span>/ person</span></div>
+                                <a href="tour-detail.html" class="tour-card-btn">View Tour</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title">Ready to Explore Bali?</h2>
+                <p class="cta-text">Start planning your dream Bali adventure today.</p>
+                <div class="cta-buttons">
+                    <a href="tours.html?destination=bali" class="cta-btn-primary">
+                        <i class="bi bi-search me-2"></i> View Bali Tours
+                    </a>
+                    <a href="contact.html" class="cta-btn-secondary">
+                        <i class="bi bi-chat-dots me-2"></i> Talk to an Expert
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-main">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <div class="footer-brand-logo">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 20C12 15 16 10 20 10C24 10 28 15 28 20C28 25 24 30 20 30"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
+                                <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                            B&G Adventures
+                        </div>
+                        <p>Discover handpicked destinations and expertly crafted tours—trusted by 50,000+ travelers
+                            worldwide.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Explore</h6>
+                    <ul class="footer-links">
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-newsletter">
+                        <h6 class="footer-heading">Get Travel Inspiration</h6>
+                        <p>Subscribe for exclusive deals.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">© 2026 B&G Adventures. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

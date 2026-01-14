@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about B&G Adventure - your trusted travel partner. 50,000+ happy travelers, expert local guides, and handcrafted adventures since 2010.">
+    <title>About Us - B&G Adventures</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <style>
+        .about-hero {
+            padding-top: 150px;
+            padding-bottom: 100px;
+            background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+            color: white;
+        }
+
+        .about-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: var(--space-md);
+        }
+
+        .about-hero p {
+            font-size: var(--size-body-lg);
+            opacity: 0.9;
+            max-width: 600px;
+        }
+
+        .stats-section {
+            padding: var(--space-2xl) 0;
+            background: white;
+            margin-top: -60px;
+            border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: var(--space-xl);
+        }
+
+        .stat-box .number {
+            font-family: var(--font-heading);
+            font-size: var(--size-h1);
+            font-weight: 700;
+            color: var(--color-primary);
+            line-height: 1;
+        }
+
+        .stat-box .label {
+            color: var(--color-neutral-500);
+            margin-top: var(--space-sm);
+        }
+
+        .story-section {
+            padding: var(--space-3xl) 0;
+        }
+
+        .story-section h2 {
+            margin-bottom: var(--space-lg);
+        }
+
+        .story-section p {
+            font-size: var(--size-body-lg);
+            line-height: 1.8;
+            color: var(--color-neutral-900);
+        }
+
+        .story-image {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .story-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .values-section {
+            padding: var(--space-3xl) 0;
+            background: var(--color-neutral-100);
+        }
+
+        .value-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            height: 100%;
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-base);
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .value-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: var(--radius-md);
+            background: var(--color-accent-light);
+            color: var(--color-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .value-card h3 {
+            font-size: var(--size-h5);
+            margin-bottom: var(--space-sm);
+        }
+
+        .team-section {
+            padding: var(--space-3xl) 0;
+        }
+
+        .team-card {
+            text-align: center;
+        }
+
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto var(--space-md);
+            box-shadow: var(--shadow-md);
+        }
+
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-card h4 {
+            margin-bottom: var(--space-xs);
+        }
+
+        .team-card p {
+            color: var(--color-neutral-500);
+            font-size: var(--size-caption);
+        }
+
+        .partners-section {
+            padding: var(--space-2xl) 0;
+            background: white;
+            border-top: 1px solid var(--color-neutral-200);
+        }
+
+        .partner-logo {
+            opacity: 0.5;
+            transition: opacity var(--transition-fast);
+            max-height: 40px;
+        }
+
+        .partner-logo:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                    <path d="M12 20C12 15 16 10 20 10C24 10 28 15 28 20C28 25 24 30 20 30" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" />
+                    <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
+                    <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
+                </svg>
+                B&G 
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-actions d-none d-lg-flex">
+                <a href="login.html" class="btn btn-outline-light btn-sm">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section class="about-hero text-center">
+            <div class="container">
+                <h1 class="text-white">We Create Unforgettable Adventures</h1>
+                <p class="mx-auto">Since 2010, we've been crafting extraordinary travel experiences that connect curious
+                    travelers with the world's most incredible destinations.</p>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="stat-box">
+                            <div class="number">50K+</div>
+                            <div class="label">Happy Travelers</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-box">
+                            <div class="number">120+</div>
+                            <div class="label">Destinations</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-box">
+                            <div class="number">500+</div>
+                            <div class="label">Curated Tours</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-box">
+                            <div class="number">4.9</div>
+                            <div class="label">Average Rating</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STORY -->
+        <section class="story-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h2>Our Story</h2>
+                        <p>B&G Adventure was born from a simple belief: travel should be more than just visiting places—it
+                            should transform you. Our founders, avid travelers themselves, were frustrated with
+                            cookie-cutter tours that missed the authentic soul of destinations.</p>
+                        <p>So we built something different. We partner with local experts who know every hidden alley,
+                            the best time to catch a sunset, and where the locals really eat. We keep our groups small
+                            so you can move freely and connect deeply. And we handle all the logistics so you can focus
+                            on what matters: the experience.</p>
+                        <p>Today, we're proud to have helped over 50,000 travelers discover the world on their terms.
+                            But we're just getting started.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="story-image">
+                            <img src="assets/images/about-us.png" alt="Travelers exploring rice terraces">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VALUES -->
+        <section class="values-section">
+            <div class="container">
+                <h2 class="text-center mb-5">What We Stand For</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="bi bi-heart"></i></div>
+                            <h3>Authentic Experiences</h3>
+                            <p>We go beyond tourist traps to show you the real culture, people, and stories of each
+                                destination.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="bi bi-globe2"></i></div>
+                            <h3>Sustainable Travel</h3>
+                            <p>We're committed to protecting the places we visit and supporting local communities.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="bi bi-people"></i></div>
+                            <h3>Small Groups</h3>
+                            <p>Our groups max out at 12, ensuring personal attention and meaningful connections.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="bi bi-shield-check"></i></div>
+                            <h3>24/7 Support</h3>
+                            <p>From booking to return, our team is always here to ensure smooth travels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM -->
+        <section class="team-section">
+            <div class="container">
+                <h2 class="text-center mb-5">Meet Our Leadership</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="team-card">
+                            <div class="team-photo">
+                                <img src="./assets/images/leader-1.png" alt="Elena Rodriguez">
+                            </div>
+                            <h4>Elena Rodriguez</h4>
+                            <p>Co-Founder & CEO</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="team-card">
+                            <div class="team-photo">
+                                <img src="./assets/images/leader-2.png" alt="Marcus Chen">
+                            </div>
+                            <h4>Marcus Chen</h4>
+                            <p>Co-Founder & COO</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="team-card">
+                            <div class="team-photo">
+                                <img src="./assets/images/leader-3.png" alt="Sarah Mitchell">
+                            </div>
+                            <h4>Sarah Mitchell</h4>
+                            <p>Head of Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="team-card">
+                            <div class="team-photo">
+                                <img src="./assets/images/leader-4.png" alt="David Okonkwo">
+                            </div>
+                            <h4>David Okonkwo</h4>
+                            <p>Head of Partnerships</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title">Ready to Start Your Adventure?</h2>
+                <p class="cta-text">Browse our tours or talk to our travel experts.</p>
+                <div class="cta-buttons">
+                    <a href="tours.html" class="cta-btn-primary ">
+                        <i class="bi bi-compass me-2"></i> Explore Tours
+                    </a>
+                    <a href="contact.html" class="cta-btn-secondary">
+                        <i class="bi bi-chat-dots me-2"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-main">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <div class="footer-brand-logo">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 20C12 15 16 10 20 10C24 10 28 15 28 20C28 25 24 30 20 30"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
+                                <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                            B&G Adventures
+                        </div>
+                        <p>Your trusted travel partner since 2010.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Explore</h6>
+                    <ul class="footer-links">
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-newsletter">
+                        <h6 class="footer-heading">Newsletter</h6>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">© 2026 B&G Adventures All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

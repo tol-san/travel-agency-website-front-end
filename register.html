@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Create a TravelCo account to book tours, manage your trips, and get personalized travel recommendations.">
+    <title>Create Account - TravelCo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <style>
+        .auth-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: var(--color-neutral-100);
+        }
+
+        .auth-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-2xl) 0;
+        }
+
+        .auth-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            overflow: hidden;
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: row-reverse;
+            /* Image on right for register */
+        }
+
+        .auth-image {
+            flex: 1;
+            background-image: url('assets/images/tour-adventure.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: none;
+        }
+
+        .auth-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+        }
+
+        .auth-image-content {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: var(--space-xl);
+            color: white;
+        }
+
+        .auth-form-container {
+            flex: 1;
+            padding: var(--space-2xl);
+        }
+
+        .auth-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: var(--size-h5);
+            color: var(--color-secondary);
+            margin-bottom: var(--space-xl);
+            text-decoration: none;
+        }
+
+        .social-btn {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            padding: var(--space-sm);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--radius-md);
+            background: white;
+            color: var(--color-neutral-900);
+            font-weight: 500;
+            transition: all var(--transition-fast);
+            margin-bottom: var(--space-sm);
+            text-decoration: none;
+        }
+
+        .social-btn:hover {
+            background: var(--color-neutral-100);
+            border-color: var(--color-neutral-500);
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: var(--space-lg) 0;
+            color: var(--color-neutral-500);
+            font-size: var(--size-caption);
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--color-neutral-200);
+        }
+
+        .divider span {
+            padding: 0 var(--space-sm);
+        }
+
+        @media (min-width: 992px) {
+            .auth-image {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-form-container">
+                <a href="index.html" class="auth-logo">
+                    <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+                        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                        <path d="M12 20C12 15 16 10 20 10C24 10 28 15 28 20C28 25 24 30 20 30" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" />
+                        <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
+                        <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                    TravelCo
+                </a>
+
+                <h1 class="h3 mb-2">Create Account</h1>
+                <p class="text-muted mb-4">Start your adventure with TravelCo today.</p>
+
+                <form action="index.html">
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Create a password"
+                            required>
+                        <div class="form-text">Must be at least 8 characters.</div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="terms" required>
+                        <label class="form-check-label small" for="terms">I agree to the <a href="terms.html">Terms of
+                                Service</a> and <a href="privacy.html">Privacy Policy</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 mb-3">Create Account</button>
+                </form>
+
+                <div class="divider">
+                    <span>OR SIGN UP WITH</span>
+                </div>
+
+                <button class="social-btn">
+                    <i class="bi bi-google"></i> Google
+                </button>
+
+                <p class="text-center mt-4 mb-0 small">
+                    Already have an account? <a href="login.html" class="fw-bold">Sign In</a>
+                </p>
+            </div>
+
+            <div class="auth-image">
+                <div class="auth-image-content">
+                    <h3>"To travel is to discover that everyone is wrong about other countries."</h3>
+                    <p class="mb-0">— Aldous Huxley</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

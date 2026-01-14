@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore stunning destinations worldwide. From tropical beaches to ancient cities, find your perfect travel destination with B&G Adventures.">
+    <title>Explore Destinations - B&G AdventuresB&G Adventures</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/destinations.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                    <path d="M12 20C12 15 16 10 20 10C24 10 28 15 28 20C28 25 24 30 20 30" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" />
+                    <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
+                    <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
+                </svg>
+                <span class="brand-text">B&amp;G</span>
+            </a>
+
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-4"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="destinations.html">
+                            Destinations
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="destinations.html?region=asia">Asia</a></li>
+                            <li><a class="dropdown-item" href="destinations.html?region=europe">Europe</a></li>
+                            <li><a class="dropdown-item" href="destinations.html?region=americas">Americas</a></li>
+                            <li><a class="dropdown-item" href="destinations.html?region=africa">Africa</a></li>
+                            <li><a class="dropdown-item" href="destinations.html?region=oceania">Oceania</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="destinations.html">View All</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="tours.html">
+                            Tours
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tours.html?category=adventure">Adventure</a></li>
+                            <li><a class="dropdown-item" href="tours.html?category=cultural">Cultural</a></li>
+                            <li><a class="dropdown-item" href="tours.html?category=luxury">Luxury</a></li>
+                            <li><a class="dropdown-item" href="tours.html?category=family">Family</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-actions d-none d-lg-flex">
+                <button class="navbar-icon-btn btn btn-link text-dark p-0 me-3 shadow-none" aria-label="Search">
+                    <i class="bi bi-search fs-5"></i>
+                </button>
+                <a href="login.html" class="btn btn-primary btn-sm">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Off-canvas Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">B&G</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="destinations.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <hr>
+            <a href="login.html" class="btn btn-primary w-100">Sign In</a>
+        </div>
+    </div>
+
+    <main id="main-content">
+
+        <!-- HERO SECTION -->
+        <section class="hero hero-medium" aria-label="Explore Destinations" style="padding-top: 100px;">
+            <div class="hero-bg">
+                <img src="assets/images/hero-main.png" alt="Beautiful travel destinations around the world">
+            </div>
+            <div class="hero-overlay hero-overlay-dark"></div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">Explore Destinations</h1>
+                <p class="hero-subtitle">Discover the world's most stunning locations, handpicked by our travel experts.
+                </p>
+
+                <!-- Simple Search -->
+                <div class="hero-search" style="max-width: 600px; margin: 0 auto;">
+                    <form class="d-flex gap-2" role="search">
+                        <input type="text" class="form-control" placeholder="Search destinations..."
+                            aria-label="Search destinations">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FILTER PILLS -->
+        <section class="filter-section" aria-label="Filter by region">
+            <div class="container">
+                <div class="filter-pills" role="tablist">
+                    <button class="filter-pill active" role="tab" aria-selected="true" data-region="all">
+                        <i class="bi bi-globe"></i> All Regions
+                    </button>
+                    <button class="filter-pill" role="tab" aria-selected="false" data-region="asia">
+                        <i class="bi bi-geo"></i> Asia
+                    </button>
+                    <button class="filter-pill" role="tab" aria-selected="false" data-region="europe">
+                        <i class="bi bi-geo"></i> Europe
+                    </button>
+                    <button class="filter-pill" role="tab" aria-selected="false" data-region="americas">
+                        <i class="bi bi-geo"></i> Americas
+                    </button>
+                    <button class="filter-pill" role="tab" aria-selected="false" data-region="africa">
+                        <i class="bi bi-geo"></i> Africa
+                    </button>
+                    <button class="filter-pill" role="tab" aria-selected="false" data-region="oceania">
+                        <i class="bi bi-geo"></i> Oceania
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESTINATIONS GRID -->
+        <section class="destinations-grid" aria-labelledby="destinations-grid-title">
+            <div class="container">
+                <div class="row g-4" id="destinations-container">
+
+                    <!-- Destination 1: Bali -->
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-region="asia">
+                        <a href="destination-detail.html?id=bali" class="text-decoration-none">
+                            <article class="destination-card" aria-label="Explore Bali, Indonesia">
+                                <div class="destination-card-img">
+                                    <img src="assets/images/bali.png" alt="Emerald rice terraces and temples in Bali"
+                                        loading="lazy">
+                                    <span class="destination-card-badge">Trending</span>
+                                </div>
+                                <div class="destination-card-body">
+                                    <h3 class="destination-card-title">Bali</h3>
+                                    <p class="destination-card-country">
+                                        <i class="bi bi-geo-alt"></i> Indonesia
+                                    </p>
+                                    <div class="destination-card-tours">
+                                        <span class="destination-card-count">24 Tours</span>
+                                        <span class="destination-card-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Destination 2: Santorini -->
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-region="europe">
+                        <a href="destination-detail.html?id=santorini" class="text-decoration-none">
+                            <article class="destination-card" aria-label="Explore Santorini, Greece">
+                                <div class="destination-card-img">
+                                    <img src="assets/images/santorini.png"
+                                        alt="White-washed buildings with blue domes in Santorini" loading="lazy">
+                                </div>
+                                <div class="destination-card-body">
+                                    <h3 class="destination-card-title">Santorini</h3>
+                                    <p class="destination-card-country">
+                                        <i class="bi bi-geo-alt"></i> Greece
+                                    </p>
+                                    <div class="destination-card-tours">
+                                        <span class="destination-card-count">18 Tours</span>
+                                        <span class="destination-card-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Destination 3: Kyoto -->
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-region="asia">
+                        <a href="destination-detail.html?id=kyoto" class="text-decoration-none">
+                            <article class="destination-card" aria-label="Explore Kyoto, Japan">
+                                <div class="destination-card-img">
+                                    <img src="assets/images/kyoto.png" alt="Traditional torii gates in Kyoto, Japan"
+                                        loading="lazy">
+                                    <span class="destination-card-badge">New</span>
+                                </div>
+                                <div class="destination-card-body">
+                                    <h3 class="destination-card-title">Kyoto</h3>
+                                    <p class="destination-card-country">
+                                        <i class="bi bi-geo-alt"></i> Japan
+                                    </p>
+                                    <div class="destination-card-tours">
+                                        <span class="destination-card-count">15 Tours</span>
+                                        <span class="destination-card-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Destination 4: Machu Picchu -->
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-region="americas">
+                        <a href="destination-detail.html?id=machu-picchu" class="text-decoration-none">
+                            <article class="destination-card" aria-label="Explore Machu Picchu, Peru">
+                                <div class="destination-card-img">
+                                    <img src="assets/images/machu-picchu.png"
+                                        alt="Ancient Incan citadel of Machu Picchu" loading="lazy">
+                                </div>
+                                <div class="destination-card-body">
+                                    <h3 class="destination-card-title">Machu Picchu</h3>
+                                    <p class="destination-card-country">
+                                        <i class="bi bi-geo-alt"></i> Peru
+                                    </p>
+                                    <div class="destination-card-tours">
+                                        <span class="destination-card-count">12 Tours</span>
+                                        <span class="destination-card-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Destination 5: Cape Town -->
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-region="africa">
+                        <a href="destination-detail.html?id=cape-town" class="text-decoration-none">
+                            <article class="destination-card" aria-label="Explore Cape Town, South Africa">
+                                <div class="destination-card-img">
+                                    <img src="assets/images/tour-adventure.png" alt="Cape Town coastline and mountains"
+                                        loading="lazy">
+                                    <span class="destination-card-badge">Popular</span>
+                                </div>
+                                <div class="destination-card-body">
+                                    <h3 class="destination-card-title">Cape Town</h3>
+                                    <p class="destination-card-country">
+                                        <i class="bi bi-geo-alt"></i> South Africa
+                                    </p>
+                                    <div class="destination-card-tours">
+                                        <span class="destination-card-count">16 Tours</span>
+                                        <span class="destination-card-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Destination 6: Barcelona -->
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-region="europe">
+                        <a href="destination-detail.html?id=barcelona" class="text-decoration-none">
+                            <article class="destination-card" aria-label="Explore Barcelona, Spain">
+                                <div class="destination-card-img">
+                                    <img src="assets/images/santorini.png" alt="Colorful architecture in Barcelona"
+                                        loading="lazy">
+                                </div>
+                                <div class="destination-card-body">
+                                    <h3 class="destination-card-title">Barcelona</h3>
+                                    <p class="destination-card-country">
+                                        <i class="bi bi-geo-alt"></i> Spain
+                                    </p>
+                                    <div class="destination-card-tours">
+                                        <span class="destination-card-count">20 Tours</span>
+                                        <span class="destination-card-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Destination 7: Maldives -->
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-region="asia">
+                        <a href="destination-detail.html?id=maldives" class="text-decoration-none">
+                            <article class="destination-card" aria-label="Explore Maldives">
+                                <div class="destination-card-img">
+                                    <img src="assets/images/hero-main.png" alt="Crystal clear waters of Maldives"
+                                        loading="lazy">
+                                    <span class="destination-card-badge">Luxury</span>
+                                </div>
+                                <div class="destination-card-body">
+                                    <h3 class="destination-card-title">Maldives</h3>
+                                    <p class="destination-card-country">
+                                        <i class="bi bi-geo-alt"></i> Maldives
+                                    </p>
+                                    <div class="destination-card-tours">
+                                        <span class="destination-card-count">10 Tours</span>
+                                        <span class="destination-card-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Destination 8: Iceland -->
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-region="europe">
+                        <a href="destination-detail.html?id=iceland" class="text-decoration-none">
+                            <article class="destination-card" aria-label="Explore Iceland">
+                                <div class="destination-card-img">
+                                    <img src="assets/images/kyoto.png" alt="Northern lights in Iceland" loading="lazy">
+                                </div>
+                                <div class="destination-card-body">
+                                    <h3 class="destination-card-title">Iceland</h3>
+                                    <p class="destination-card-country">
+                                        <i class="bi bi-geo-alt"></i> Iceland
+                                    </p>
+                                    <div class="destination-card-tours">
+                                        <span class="destination-card-count">14 Tours</span>
+                                        <span class="destination-card-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Destination 9: Queenstown -->
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-region="oceania">
+                        <a href="destination-detail.html?id=queenstown" class="text-decoration-none">
+                            <article class="destination-card" aria-label="Explore Queenstown, New Zealand">
+                                <div class="destination-card-img">
+                                    <img src="assets/images/tour-adventure.png" alt="Scenic mountains in Queenstown"
+                                        loading="lazy">
+                                    <span class="destination-card-badge">Adventure</span>
+                                </div>
+                                <div class="destination-card-body">
+                                    <h3 class="destination-card-title">Queenstown</h3>
+                                    <p class="destination-card-country">
+                                        <i class="bi bi-geo-alt"></i> New Zealand
+                                    </p>
+                                    <div class="destination-card-tours">
+                                        <span class="destination-card-count">18 Tours</span>
+                                        <span class="destination-card-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Destination 10: Marrakech -->
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-region="africa">
+                        <a href="destination-detail.html?id=marrakech" class="text-decoration-none">
+                            <article class="destination-card" aria-label="Explore Marrakech, Morocco">
+                                <div class="destination-card-img">
+                                    <img src="assets/images/bali.png" alt="Colorful souks of Marrakech" loading="lazy">
+                                </div>
+                                <div class="destination-card-body">
+                                    <h3 class="destination-card-title">Marrakech</h3>
+                                    <p class="destination-card-country">
+                                        <i class="bi bi-geo-alt"></i> Morocco
+                                    </p>
+                                    <div class="destination-card-tours">
+                                        <span class="destination-card-count">11 Tours</span>
+                                        <span class="destination-card-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Destination 11: Swiss Alps -->
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-region="europe">
+                        <a href="destination-detail.html?id=swiss-alps" class="text-decoration-none">
+                            <article class="destination-card" aria-label="Explore Swiss Alps">
+                                <div class="destination-card-img">
+                                    <img src="assets/images/machu-picchu.png" alt="Snow-capped Swiss Alps"
+                                        loading="lazy">
+                                </div>
+                                <div class="destination-card-body">
+                                    <h3 class="destination-card-title">Swiss Alps</h3>
+                                    <p class="destination-card-country">
+                                        <i class="bi bi-geo-alt"></i> Switzerland
+                                    </p>
+                                    <div class="destination-card-tours">
+                                        <span class="destination-card-count">22 Tours</span>
+                                        <span class="destination-card-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Destination 12: Patagonia -->
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-region="americas">
+                        <a href="destination-detail.html?id=patagonia" class="text-decoration-none">
+                            <article class="destination-card" aria-label="Explore Patagonia, Argentina">
+                                <div class="destination-card-img">
+                                    <img src="assets/images/tour-adventure.png" alt="Wild landscapes of Patagonia"
+                                        loading="lazy">
+                                    <span class="destination-card-badge">Wild</span>
+                                </div>
+                                <div class="destination-card-body">
+                                    <h3 class="destination-card-title">Patagonia</h3>
+                                    <p class="destination-card-country">
+                                        <i class="bi bi-geo-alt"></i> Argentina
+                                    </p>
+                                    <div class="destination-card-tours">
+                                        <span class="destination-card-count">9 Tours</span>
+                                        <span class="destination-card-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Pagination -->
+                <nav aria-label="Destinations pagination" class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <i class="bi bi-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- CTA BANNER -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <h2 id="cta-title" class="cta-title">Can't Decide? Let Us Help!</h2>
+                <p class="cta-text">Our travel experts will craft a personalized itinerary just for you.</p>
+                <div class="cta-buttons">
+                    <a href="custom-trip.html" class="cta-btn-primary">
+                        <i class="bi bi-magic me-2"></i>
+                        Build Custom Trip
+                    </a>
+                    <a href="contact.html" class="cta-btn-secondary">
+                        <i class="bi bi-chat-dots me-2"></i>
+                        Talk to an Expert
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-main">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <div class="footer-brand-logo">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 20C12 15 16 10 20 10C24 10 28 15 28 20C28 25 24 30 20 30"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
+                                <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                            B&G Adventures
+                        </div>
+                        <p>Discover handpicked destinations and expertly crafted tours—trusted by 50,000+ travelers
+                            worldwide.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-column">
+                    <h6 class="footer-heading">Explore</h6>
+                    <ul class="footer-links">
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="tours.html?category=adventure">Adventure</a></li>
+                        <li><a href="tours.html?category=luxury">Luxury Travel</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-column">
+                    <h6 class="footer-heading">Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-column">
+                    <div class="footer-newsletter">
+                        <h6 class="footer-heading">Get Travel Inspiration</h6>
+                        <p>Subscribe for exclusive deals and travel tips.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">© 2026 B&G Adventures. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                    <div class="footer-selectors">
+                        <button class="footer-selector"><i class="bi bi-globe"></i> English</button>
+                        <button class="footer-selector"><i class="bi bi-currency-dollar"></i> USD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // DOM Elements
+            const filterPills = document.querySelectorAll('.filter-pill');
+            const destinations = Array.from(document.querySelectorAll('#destinations-container > div'));
+            const searchInput = document.querySelector('.hero-search input');
+            const searchForm = document.querySelector('.hero-search form');
+            const paginationContainer = document.querySelector('.pagination');
+
+            // State
+            let currentFilter = 'all';
+            let currentSearch = '';
+            let currentPage = 1;
+            const itemsPerPage = 6;
+
+            // Prevent form submission
+            searchForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+            });
+
+            // Search functionality
+            searchInput.addEventListener('input', function () {
+                currentSearch = this.value.toLowerCase().trim();
+                currentPage = 1;
+                updateDisplay();
+            });
+
+            // Filter functionality
+            filterPills.forEach(pill => {
+                pill.addEventListener('click', function () {
+                    filterPills.forEach(p => {
+                        p.classList.remove('active');
+                        p.setAttribute('aria-selected', 'false');
+                    });
+                    this.classList.add('active');
+                    this.setAttribute('aria-selected', 'true');
+
+                    currentFilter = this.dataset.region;
+                    currentPage = 1;
+                    updateDisplay();
+                });
+            });
+
+            // Get filtered destinations
+            function getFilteredDestinations() {
+                return destinations.filter(dest => {
+                    // Check region filter
+                    const matchesRegion = currentFilter === 'all' || dest.dataset.region === currentFilter;
+
+                    // Check search
+                    if (!currentSearch) return matchesRegion;
+
+                    const title = dest.querySelector('.destination-card-title')?.textContent.toLowerCase() || '';
+                    const country = dest.querySelector('.destination-card-country')?.textContent.toLowerCase() || '';
+                    const matchesSearch = title.includes(currentSearch) || country.includes(currentSearch);
+
+                    return matchesRegion && matchesSearch;
+                });
+            }
+
+            // Update display
+            function updateDisplay() {
+                const filtered = getFilteredDestinations();
+                const totalPages = Math.ceil(filtered.length / itemsPerPage);
+
+                // Ensure current page is valid
+                if (currentPage > totalPages) currentPage = Math.max(1, totalPages);
+
+                // Calculate pagination range
+                const startIndex = (currentPage - 1) * itemsPerPage;
+                const endIndex = startIndex + itemsPerPage;
+
+                // Show/hide destinations
+                destinations.forEach(dest => {
+                    const filteredIndex = filtered.indexOf(dest);
+
+                    if (filteredIndex === -1) {
+                        // Not in filtered results
+                        dest.style.display = 'none';
+                    } else if (filteredIndex >= startIndex && filteredIndex < endIndex) {
+                        // In current page
+                        dest.style.display = '';
+                        dest.style.opacity = '0';
+                        setTimeout(() => {
+                            dest.style.opacity = '1';
+                            dest.style.transition = 'opacity 0.3s ease';
+                        }, 50);
+                    } else {
+                        // In filtered but different page
+                        dest.style.display = 'none';
+                    }
+                });
+
+                // Update pagination
+                updatePagination(totalPages, filtered.length);
+            }
+
+            // Update pagination UI
+            function updatePagination(totalPages, totalItems) {
+                if (totalPages <= 1) {
+                    paginationContainer.innerHTML = '';
+                    return;
+                }
+
+                let html = '';
+
+                // Previous button
+                html += `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+                    <a class="page-link" href="#" data-page="${currentPage - 1}" aria-label="Previous">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                </li>`;
+
+                // Page numbers
+                for (let i = 1; i <= totalPages; i++) {
+                    html += `<li class="page-item ${i === currentPage ? 'active' : ''}">
+                        <a class="page-link" href="#" data-page="${i}">${i}</a>
+                    </li>`;
+                }
+
+                // Next button
+                html += `<li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
+                    <a class="page-link" href="#" data-page="${currentPage + 1}" aria-label="Next">
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </li>`;
+
+                paginationContainer.innerHTML = html;
+
+                // Add click handlers to pagination
+                paginationContainer.querySelectorAll('.page-link').forEach(link => {
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const page = parseInt(this.dataset.page);
+                        if (page >= 1 && page <= totalPages && page !== currentPage) {
+                            currentPage = page;
+                            updateDisplay();
+                            // Scroll to top of grid
+                            document.querySelector('.destinations-grid').scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    });
+                });
+            }
+
+            updateDisplay();
+        });
+    </script>
+</body>
+
+</html>

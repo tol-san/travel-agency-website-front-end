@@ -1,0 +1,291 @@
+.navbar {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: var(--space-md) 0;
+  transition: all var(--transition-base);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-sm) 0;
+  border-bottom-color: transparent;
+}
+
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.navbar-brand:hover {
+  color: var(--color-primary);
+}
+
+.navbar.scrolled .navbar-brand {
+  color: var(--color-secondary);
+}
+
+.navbar.scrolled .navbar-brand:hover {
+  color: var(--color-primary);
+}
+
+.navbar-brand svg,
+.navbar-brand img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Smooth icon rotation and prepare brand text for blur on hover */
+.navbar-brand svg,
+.navbar-brand img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.2, 1);
+  transform-origin: center;
+}
+
+.brand-text {
+  transition: transform 0.28s ease, opacity 0.28s ease;
+  display: inline-block;
+  will-change: transform, opacity;
+  transform-origin: left center;
+}
+
+.navbar-brand:hover svg,
+.navbar-brand:focus svg {
+  transform: rotate(-90deg);
+}
+
+.navbar-brand:hover .brand-text,
+.navbar-brand:focus .brand-text {
+  transform: scale(0.92) translateY(0);
+  opacity: 0.9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar-brand svg,
+  .navbar-brand .brand-text {
+    transition: none !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}
+
+.navbar-nav {
+  gap: var(--space-lg);
+}
+
+.nav-link {
+  font-family: var(--font-body);
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: var(--space-sm) 0 !important;
+  transition: all var(--transition-fast);
+  position: relative;
+  opacity: 0.8;
+}
+
+.navbar.scrolled .nav-link {
+  color: var(--color-neutral-900);
+}
+
+.nav-link:hover {
+  color: white;
+  opacity: 1;
+  background-color: transparent;
+}
+
+.navbar.scrolled .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.nav-link.active {
+  font-weight: 700;
+  opacity: 1;
+  color: white;
+}
+
+.nav-link.active::after {
+  display: none;
+}
+
+.dropdown-menu {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xl);
+  padding: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.dropdown-item {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  color: var(--color-neutral-900);
+}
+
+.dropdown-item:hover {
+  background-color: rgba(13, 110, 253, 0.1);
+  color: var(--color-primary);
+}
+
+.navbar .navbar-actions .btn {
+  border-radius: 50px !important;
+  padding: 0.5rem 1.5rem;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: white;
+  transition: all 0.3s;
+}
+
+.navbar .navbar-actions .btn:hover {
+  background: white;
+  color: var(--color-primary);
+  border-color: white;
+}
+
+.navbar.scrolled .navbar-actions .btn {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.navbar.scrolled .navbar-actions .btn:hover {
+  background: var(--color-primary-dark);
+}
+
+.navbar .nav-link.active,
+.navbar.active,
+.dropdown-toggle.active {
+  color: var(--color-primary) !important;
+}
+
+.dropdown-toggle[aria-expanded="true"] {
+  color: var(--color-primary) !important;
+}
+/* -------------------- MOBILE MENU -------------------- */
+
+.navbar-toggler {
+  border: none;
+  color: white !important;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar.scrolled .navbar-toggler {
+  color: var(--color-neutral-900) !important;
+}
+
+.navbar-icon-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin-right: var(--space-sm);
+  transition: color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-icon-btn:hover {
+  color: var(--color-primary);
+}
+
+.navbar.scrolled .navbar-icon-btn {
+  color: var(--color-neutral-900);
+}
+
+.navbar.scrolled .navbar-icon-btn:hover {
+  color: var(--color-primary);
+}
+
+.offcanvas {
+  background-color: white;
+}
+
+.offcanvas .nav-link {
+  color: var(--color-neutral-900);
+  font-size: 1.1rem;
+  padding: var(--space-sm) 0;
+}
+
+.offcanvas .nav-link:hover,
+.offcanvas .navbar-brand:hover,
+.offcanvas .nav-link.active {
+  color: var(--color-primary);
+}
+
+.offcanvas .btn-close {
+  opacity: 0.8;
+}
+
+.offcanvas .navbar-brand {
+  color: var(--color-secondary);
+}
+
+.navbar .navbar-actions .navbar-icon-btn,
+.navbar .navbar-actions .btn {
+  color: white !important;
+}
+
+.navbar .navbar-actions .navbar-icon-btn:hover,
+.navbar .navbar-actions .btn:hover {
+  color: var(--color-primary) !important;
+}
+
+/* Prevent page content from being hidden behind the fixed navbar. Adjust if your navbar
+   height changes. This provides a simple, responsive safe-area so headings are not
+   obscured on load. */
+:root {
+  --site-navbar-offset: 76px; /* default desktop navbar height */
+}
+
+/* Apply offset only when a page opts in by adding `with-navbar-offset` to `<body>`.
+   This prevents hero/home pages that intentionally let the navbar overlay the hero
+   from being pushed down. */
+body.with-navbar-offset {
+  padding-top: var(--site-navbar-offset);
+}
+
+@media (max-width: 991px) {
+  body.with-navbar-offset {
+    padding-top: 64px; /* slightly smaller on tablet/phone */
+  }
+}

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bali Explorer: 7-day adventure through temples, rice terraces & beaches. Expert guides, all-inclusive package. Book now with TravelCo.">
+    <title>Bali Explorer Tour - 7 Days | TravelCo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/tours.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body class="tours-page">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg scrolled" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color: var(--color-secondary);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                    <path d="M12 20C12 15 16 10 20 10C24 10 28 15 28 20C28 25 24 30 20 30" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" />
+                    <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
+                    <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
+                </svg>
+                B&G 
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"
+                            style="color: var(--color-neutral-900);">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html"
+                            style="color: var(--color-neutral-900);">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tours.html"
+                            style="color: var(--color-neutral-900);">Tours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"
+                            style="color: var(--color-neutral-900);">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"
+                            style="color: var(--color-neutral-900);">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-actions d-none d-lg-flex">
+                <a href="login.html" class="btn btn-primary btn-sm">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+
+        <!-- TOUR GALLERY -->
+        <section class="tour-detail-hero">
+            <div class="container py-4">
+                <nav aria-label="Breadcrumb" class="mb-3">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="tours.html">Tours</a></li>
+                        <li class="breadcrumb-item active">Bali Explorer</li>
+                    </ol>
+                </nav>
+
+                <div class="tour-gallery-main">
+                    <img src="assets/images/bali.png" alt="Bali Explorer Tour - Rice terraces and temples"
+                        id="main-gallery-img">
+                </div>
+                <div class="tour-gallery-thumbs">
+                    <div class="tour-gallery-thumb active" onclick="changeImage('assets/images/bali.png', this)">
+                        <img src="assets/images/bali.png" alt="Rice terraces">
+                    </div>
+                    <div class="tour-gallery-thumb" onclick="changeImage('assets/images/kyoto.png', this)">
+                        <img src="assets/images/kyoto.png" alt="Temple visit">
+                    </div>
+                    <div class="tour-gallery-thumb" onclick="changeImage('assets/images/hero-main.png', this)">
+                        <img src="assets/images/hero-main.png" alt="Beach sunset">
+                    </div>
+                    <div class="tour-gallery-thumb" onclick="changeImage('assets/images/santorini.png', this)">
+                        <img src="assets/images/santorini.png" alt="Cultural experience">
+                    </div>
+                    <div class="tour-gallery-thumb" onclick="changeImage('assets/images/tour-adventure.png', this)">
+                        <img src="assets/images/tour-adventure.png" alt="Adventure activities">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOUR INFO -->
+        <section class="tour-info-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="tour-title-section">
+                            <h1>Bali Explorer: Temples, Rice Terraces & Beaches</h1>
+                            <div class="tour-meta">
+                                <span class="tour-meta-item"><i class="bi bi-clock"></i> 7 Days</span>
+                                <span class="tour-meta-item"><i class="bi bi-geo-alt"></i> Bali, Indonesia</span>
+                                <span class="tour-meta-item"><i class="bi bi-people"></i> Max 12 travelers</span>
+                                <span class="tour-meta-item"><i class="bi bi-translate"></i> English</span>
+                            </div>
+                            <div class="tour-rating">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i>
+                                </div>
+                                <span class="rating-text">4.8</span>
+                                <span class="review-count">(234 reviews)</span>
+                            </div>
+                            <div class="tour-highlights">
+                                <span class="highlight-badge"><i class="bi bi-check-circle"></i> Small Group</span>
+                                <span class="highlight-badge"><i class="bi bi-check-circle"></i> Expert Guide</span>
+                                <span class="highlight-badge"><i class="bi bi-check-circle"></i> All Meals</span>
+                                <span class="highlight-badge"><i class="bi bi-check-circle"></i> Free
+                                    Cancellation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN CONTENT AREA -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Left Column: Content -->
+                    <div class="col-lg-8">
+
+                        <!-- Overview -->
+                        <div class="mb-5">
+                            <h2>Tour Overview</h2>
+                            <p class="lead">Experience the magic of Bali on this immersive 7-day journey through
+                                Indonesia's most enchanting island.</p>
+                            <p>From the terraced rice paddies of Ubud to the ancient temples of Uluwatu, this carefully
+                                crafted itinerary combines cultural immersion with natural beauty. You'll explore sacred
+                                water temples, witness traditional Balinese dance performances, surf pristine beaches,
+                                and savor authentic local cuisine—all with the guidance of expert local hosts who know
+                                Bali's hidden gems.</p>
+                            <p>Whether you're seeking adventure, spirituality, or simply a chance to disconnect from the
+                                everyday, the Bali Explorer tour delivers an unforgettable experience that will leave
+                                you transformed.</p>
+                        </div>
+
+                        <!-- Itinerary -->
+                        <div class="tour-itinerary" id="itinerary">
+                            <h2 class="mb-4">Day-by-Day Itinerary</h2>
+
+                            <div class="itinerary-day open">
+                                <div class="itinerary-header" onclick="toggleItinerary(this)">
+                                    <div class="itinerary-day-number">1</div>
+                                    <div class="itinerary-title">
+                                        <h4>Arrival in Bali & Welcome Dinner</h4>
+                                        <p><i class="bi bi-geo-alt"></i> Seminyak • <i class="bi bi-moon"></i> Overnight
+                                        </p>
+                                    </div>
+                                    <i class="bi bi-chevron-down itinerary-toggle"></i>
+                                </div>
+                                <div class="itinerary-content">
+                                    <p>Welcome to Bali! Upon arrival at Ngurah Rai International Airport, you'll be
+                                        greeted by your tour leader and transferred to your beachfront hotel in
+                                        Seminyak. After settling in, enjoy a welcome dinner at a renowned local
+                                        restaurant where you'll meet your fellow travelers and get a taste of authentic
+                                        Balinese cuisine.</p>
+                                    <p><strong>Included:</strong> Airport transfer, welcome dinner, overnight
+                                        accommodation</p>
+                                </div>
+                            </div>
+
+                            <div class="itinerary-day">
+                                <div class="itinerary-header" onclick="toggleItinerary(this)">
+                                    <div class="itinerary-day-number">2</div>
+                                    <div class="itinerary-title">
+                                        <h4>Ubud: Rice Terraces & Monkey Forest</h4>
+                                        <p><i class="bi bi-geo-alt"></i> Ubud • <i class="bi bi-clock"></i> Full Day</p>
+                                    </div>
+                                    <i class="bi bi-chevron-down itinerary-toggle"></i>
+                                </div>
+                                <div class="itinerary-content">
+                                    <p>Head to Ubud, Bali's cultural heart. Visit the stunning Tegallalang Rice Terraces
+                                        for a morning trek, then explore the Sacred Monkey Forest Sanctuary. After lunch
+                                        at an organic farm-to-table restaurant, browse local art galleries and
+                                        workshops.</p>
+                                    <p><strong>Included:</strong> Breakfast, lunch, all entrance fees, transportation
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="itinerary-day">
+                                <div class="itinerary-header" onclick="toggleItinerary(this)">
+                                    <div class="itinerary-day-number">3</div>
+                                    <div class="itinerary-title">
+                                        <h4>Temple Trail & Traditional Dance</h4>
+                                        <p><i class="bi bi-geo-alt"></i> Ubud & Surrounds • <i class="bi bi-clock"></i>
+                                            Full Day</p>
+                                    </div>
+                                    <i class="bi bi-chevron-down itinerary-toggle"></i>
+                                </div>
+                                <div class="itinerary-content">
+                                    <p>Discover Bali's spiritual side with visits to Tirta Empul Water Temple for a
+                                        purification ceremony and the ancient Gunung Kawi temple complex. End the day
+                                        with a mesmerizing Kecak fire dance performance at sunset.</p>
+                                    <p><strong>Included:</strong> Breakfast, lunch, temple ceremonies, dance performance
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="itinerary-day">
+                                <div class="itinerary-header" onclick="toggleItinerary(this)">
+                                    <div class="itinerary-day-number">4</div>
+                                    <div class="itinerary-title">
+                                        <h4>Mount Batur Sunrise Trek</h4>
+                                        <p><i class="bi bi-geo-alt"></i> Mount Batur • <i class="bi bi-clock"></i> Early
+                                            Morning Start</p>
+                                    </div>
+                                    <i class="bi bi-chevron-down itinerary-toggle"></i>
+                                </div>
+                                <div class="itinerary-content">
+                                    <p>Rise early for an unforgettable sunrise trek up Mount Batur, an active volcano.
+                                        Watch the sun rise over the crater lake from 1,717 meters. Enjoy breakfast
+                                        cooked by volcanic steam before relaxing at natural hot springs.</p>
+                                    <p><strong>Included:</strong> Early breakfast, trekking guide, hot springs entry</p>
+                                </div>
+                            </div>
+
+                            <div class="itinerary-day">
+                                <div class="itinerary-header" onclick="toggleItinerary(this)">
+                                    <div class="itinerary-day-number">5</div>
+                                    <div class="itinerary-title">
+                                        <h4>Beach Day & Surfing Lesson</h4>
+                                        <p><i class="bi bi-geo-alt"></i> Canggu • <i class="bi bi-clock"></i> Flexible
+                                        </p>
+                                    </div>
+                                    <i class="bi bi-chevron-down itinerary-toggle"></i>
+                                </div>
+                                <div class="itinerary-content">
+                                    <p>A more relaxed day enjoying Bali's famous beaches. Try a beginner surfing lesson
+                                        at Canggu's gentle breaks, or simply relax by the pool. Free afternoon to
+                                        explore the trendy beach clubs and cafés.</p>
+                                    <p><strong>Included:</strong> Breakfast, surfing lesson (optional), transportation
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="itinerary-day">
+                                <div class="itinerary-header" onclick="toggleItinerary(this)">
+                                    <div class="itinerary-day-number">6</div>
+                                    <div class="itinerary-title">
+                                        <h4>Uluwatu Temple & Farewell Dinner</h4>
+                                        <p><i class="bi bi-geo-alt"></i> Uluwatu • <i class="bi bi-clock"></i>
+                                            Afternoon/Evening</p>
+                                    </div>
+                                    <i class="bi bi-chevron-down itinerary-toggle"></i>
+                                </div>
+                                <div class="itinerary-content">
+                                    <p>Visit the dramatic clifftop Uluwatu Temple, perched 70 meters above the sea.
+                                        Watch another spectacular Kecak dance as the sun sets over the Indian Ocean.
+                                        Celebrate with a farewell seafood dinner on Jimbaran Beach.</p>
+                                    <p><strong>Included:</strong> Breakfast, temple entry, Kecak show, farewell dinner
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="itinerary-day">
+                                <div class="itinerary-header" onclick="toggleItinerary(this)">
+                                    <div class="itinerary-day-number">7</div>
+                                    <div class="itinerary-title">
+                                        <h4>Departure Day</h4>
+                                        <p><i class="bi bi-geo-alt"></i> Bali Airport • <i class="bi bi-airplane"></i>
+                                            Transfer</p>
+                                    </div>
+                                    <i class="bi bi-chevron-down itinerary-toggle"></i>
+                                </div>
+                                <div class="itinerary-content">
+                                    <p>Enjoy a leisurely breakfast before your airport transfer. Depending on your
+                                        flight time, there may be opportunities for last-minute shopping or a spa
+                                        treatment. Farewell, Bali!</p>
+                                    <p><strong>Included:</strong> Breakfast, airport transfer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Booking Sidebar -->
+                    <div class="col-lg-4">
+                        <aside class="booking-sidebar">
+                            <div class="booking-card">
+                                <div class="booking-price">
+                                    <span class="from">From</span>
+                                    <span class="price">$1,299</span>
+                                    <span class="per-person">per person</span>
+                                </div>
+
+                                <form action="booking.html">
+                                    <div class="booking-form-group">
+                                        <label for="tour-date">Select Date</label>
+                                        <input type="date" id="tour-date" min="2026-01-07" required>
+                                    </div>
+
+                                    <div class="booking-form-group">
+                                        <label for="tour-travelers">Number of Travelers</label>
+                                        <select id="tour-travelers" name="travelers">
+                                            <option value="1">1 Traveler</option>
+                                            <option value="2" selected>2 Travelers</option>
+                                            <option value="3">3 Travelers</option>
+                                            <option value="4">4 Travelers</option>
+                                            <option value="5">5 Travelers</option>
+                                            <option value="6">6+ Travelers</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="booking-total">
+                                        <span class="label">Total</span>
+                                        <span class="amount">$2,598</span>
+                                    </div>
+
+                                    <button type="submit" class="booking-btn">
+                                        <i class="bi bi-calendar-check me-2"></i> Book This Tour
+                                    </button>
+                                </form>
+
+                                <p class="booking-guarantee">
+                                    <i class="bi bi-shield-check me-1"></i> Free cancellation up to 30 days before
+                                </p>
+                            </div>
+
+                            <!-- Quick Contact -->
+                            <div class="booking-card mt-4">
+                                <h5 class="mb-3"><i class="bi bi-headset me-2"></i> Have Questions?</h5>
+                                <p class="text-muted mb-3">Our travel experts are here to help 24/7</p>
+                                <a href="contact.html" class="btn btn-secondary w-100">
+                                    <i class="bi bi-chat-dots me-2"></i> Ask a Question
+                                </a>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INCLUSIONS / EXCLUSIONS -->
+        <section class="tour-includes">
+            <div class="container">
+                <h2 class="text-center mb-5">What's Included</h2>
+                <div class="includes-grid">
+                    <div class="includes-list">
+                        <h3><i class="bi bi-check-circle-fill"></i> Included</h3>
+                        <ul>
+                            <li><i class="bi bi-check"></i> 6 nights accommodation in boutique hotels</li>
+                            <li><i class="bi bi-check"></i> Daily breakfast, 4 lunches, 2 dinners</li>
+                            <li><i class="bi bi-check"></i> Airport transfers & all transportation</li>
+                            <li><i class="bi bi-check"></i> English-speaking expert guide</li>
+                            <li><i class="bi bi-check"></i> All entrance fees and activities</li>
+                            <li><i class="bi bi-check"></i> Mount Batur sunrise trek with guide</li>
+                            <li><i class="bi bi-check"></i> Surfing lesson</li>
+                            <li><i class="bi bi-check"></i> Kecak dance performances (2)</li>
+                            <li><i class="bi bi-check"></i> Welcome & farewell dinners</li>
+                            <li><i class="bi bi-check"></i> 24/7 on-trip support</li>
+                        </ul>
+                    </div>
+                    <div class="excludes-list">
+                        <h3><i class="bi bi-x-circle-fill"></i> Not Included</h3>
+                        <ul>
+                            <li><i class="bi bi-x"></i> International flights to/from Bali</li>
+                            <li><i class="bi bi-x"></i> Travel insurance (recommended)</li>
+                            <li><i class="bi bi-x"></i> Visa fees (if applicable)</li>
+                            <li><i class="bi bi-x"></i> Personal expenses & souvenirs</li>
+                            <li><i class="bi bi-x"></i> Optional activities not in itinerary</li>
+                            <li><i class="bi bi-x"></i> Tips for guides & drivers</li>
+                            <li><i class="bi bi-x"></i> Meals not specified</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="tour-reviews">
+            <div class="container">
+                <h2 class="text-center mb-5">Traveler Reviews</h2>
+
+                <div class="reviews-summary">
+                    <div class="reviews-average">
+                        <div class="score">4.8</div>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-half"></i>
+                        </div>
+                        <div class="count">234 reviews</div>
+                    </div>
+                    <div class="reviews-breakdown">
+                        <div class="rating-bar">
+                            <span class="label">5 stars</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 78%;"></div>
+                            </div>
+                            <span class="count">182</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="label">4 stars</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 15%;"></div>
+                            </div>
+                            <span class="count">35</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="label">3 stars</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 5%;"></div>
+                            </div>
+                            <span class="count">12</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="label">2 stars</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 1%;"></div>
+                            </div>
+                            <span class="count">3</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="label">1 star</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 1%;"></div>
+                            </div>
+                            <span class="count">2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="review-card">
+                            <div class="review-header">
+                                <div class="review-author">
+                                    <img src="https://i.pravatar.cc/100?img=32" alt="Sarah T." class="review-avatar">
+                                    <div class="review-author-info">
+                                        <h5>Sarah T.</h5>
+                                        <p>Traveled December 2025</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <p class="review-content">"Absolutely incredible experience! Our guide Made was so
+                                knowledgeable and the sunrise trek was the highlight of our trip. The group size was
+                                perfect and we made lifelong friends. Already planning to book another TravelCo tour!"
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="review-card">
+                            <div class="review-header">
+                                <div class="review-author">
+                                    <img src="https://i.pravatar.cc/100?img=60" alt="James L." class="review-avatar">
+                                    <div class="review-author-info">
+                                        <h5>James L.</h5>
+                                        <p>Traveled November 2025</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <p class="review-content">"Great value for money. The hotels were better than expected and
+                                the itinerary was perfectly paced. My only suggestion would be more free time on day 5,
+                                but otherwise flawless execution."</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn-secondary">Read All 234 Reviews</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title">Ready to Explore Bali?</h2>
+                <p class="cta-text">Secure your spot today—tours fill up fast!</p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-btn-primary"
+                        onclick="document.querySelector('.booking-sidebar').scrollIntoView({behavior:'smooth'})">
+                        <i class="bi bi-calendar-check me-2"></i> Book Now
+                    </a>
+                    <a href="contact.html" class="cta-btn-secondary">
+                        <i class="bi bi-chat-dots me-2"></i> Ask a Question
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-main">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <div class="footer-brand-logo">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 20C12 15 16 10 20 10C24 10 28 15 28 20C28 25 24 30 20 30"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
+                                <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                            B&G Adventures
+                        </div>
+                        <p>Trusted by 50,000+ travelers worldwide.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Explore</h6>
+                    <ul class="footer-links">
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-newsletter">
+                        <h6 class="footer-heading">Newsletter</h6>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">© 2026 B&G Adventures. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Gallery image switcher
+        function changeImage(src, thumb) {
+            document.getElementById('main-gallery-img').src = src;
+            document.querySelectorAll('.tour-gallery-thumb').forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        }
+
+        // Itinerary accordion
+        function toggleItinerary(header) {
+            const day = header.parentElement;
+            day.classList.toggle('open');
+        }
+
+        // Dynamic pricing
+        const travelersSelect = document.getElementById('tour-travelers');
+        const totalAmount = document.querySelector('.booking-total .amount');
+        const pricePerPerson = 1299;
+
+        if (travelersSelect && totalAmount) {
+            travelersSelect.addEventListener('change', function () {
+                let travelers = parseInt(this.value) || 1;
+                if (this.value === '6+') travelers = 6;
+                totalAmount.textContent = '$' + (travelers * pricePerPerson).toLocaleString();
+            });
+        }
+    </script>
+</body>
+
+</html>

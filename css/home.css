@@ -1,0 +1,458 @@
+/* ================================================
+   HOME PAGE SECTIONS - Travel Agency
+   ================================================ */
+
+/* ================================================
+   FEATURED DESTINATIONS SECTION
+   ================================================ */
+
+.destinations-section {
+    background: white;
+}
+
+.destination-card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: white;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    height: 100%;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.destination-card-img {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+
+.destination-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.destination-card:hover .destination-card-img img {
+    transform: scale(1.08);
+}
+
+.destination-card-badge {
+    position: absolute;
+    top: var(--space-md);
+    left: var(--space-md);
+    background: var(--color-accent);
+    color: white;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-pill);
+    font-size: var(--size-small);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.destination-card-body {
+    padding: var(--space-lg);
+}
+
+.destination-card-title {
+    font-family: var(--font-heading);
+    font-size: var(--size-h5);
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    color: var(--color-neutral-900);
+}
+
+.destination-card-country {
+    color: var(--color-neutral-500);
+    font-size: var(--size-caption);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-md);
+}
+
+.destination-card-tours {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.destination-card-count {
+    font-size: var(--size-caption);
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.destination-card-arrow {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--color-neutral-100);
+    color: var(--color-neutral-500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+.destination-card:hover .destination-card-arrow {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* ================================================
+   POPULAR TOURS SECTION
+   ================================================ */
+
+.tours-section {
+    background: var(--color-neutral-100);
+}
+
+.tour-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+.tour-card-img {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.tour-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.tour-card:hover .tour-card-img img {
+    transform: scale(1.05);
+}
+
+.tour-card-badge {
+    position: absolute;
+    top: var(--space-md);
+    left: var(--space-md);
+    background: var(--color-accent);
+    color: white;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-pill);
+    font-size: var(--size-small);
+    font-weight: 600;
+}
+
+.tour-card-wishlist {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+}
+
+.tour-card-wishlist:hover {
+    background: var(--color-danger);
+    color: white;
+}
+
+.tour-card-body {
+    padding: var(--space-lg);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-card-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-sm);
+    font-size: var(--size-caption);
+    color: var(--color-neutral-500);
+}
+
+.tour-card-meta span {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.tour-card-title {
+    font-family: var(--font-heading);
+    font-size: var(--size-h6);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--color-neutral-900);
+    line-height: 1.4;
+}
+
+.tour-card-rating {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-md);
+}
+
+.tour-card-stars {
+    color: var(--color-warning);
+    display: flex;
+    gap: 2px;
+}
+
+.tour-card-rating-text {
+    font-size: var(--size-caption);
+    color: var(--color-neutral-500);
+}
+
+.tour-card-footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-neutral-200);
+}
+
+.tour-card-price {
+    font-family: var(--font-heading);
+    font-size: var(--size-h5);
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.tour-card-price span {
+    font-size: var(--size-caption);
+    font-weight: 400;
+    color: var(--color-neutral-500);
+}
+
+.tour-card-btn {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    font-size: var(--size-caption);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.tour-card-btn:hover {
+    background: var(--color-primary-dark);
+    color: white;
+}
+
+/* ================================================
+   WHY TRAVEL WITH US SECTION
+   ================================================ */
+
+.features-section {
+    background: white;
+}
+
+.feature-card {
+    text-align: center;
+    padding: var(--space-xl);
+}
+
+.feature-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: var(--radius-lg);
+    background: var(--color-accent-light);
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-lg);
+    transition: all var(--transition-base);
+}
+
+.feature-card:hover .feature-icon {
+    background: var(--color-accent);
+    color: white;
+    transform: scale(1.1);
+}
+
+.feature-title {
+    font-family: var(--font-heading);
+    font-size: var(--size-h6);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.feature-text {
+    color: var(--color-neutral-500);
+    font-size: var(--size-caption);
+    line-height: 1.6;
+}
+
+/* ================================================
+   TESTIMONIALS SECTION
+   ================================================ */
+
+.testimonials-section {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, #2a4a6f 100%);
+    color: white;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    text-align: center;
+}
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: var(--space-lg);
+}
+
+.testimonial-quote {
+    font-size: var(--size-body-lg);
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.testimonial-author {
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+}
+
+.testimonial-trip {
+    font-size: var(--size-caption);
+    color: var(--color-accent);
+}
+
+.testimonial-stars {
+    color: var(--color-warning);
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: var(--space-md);
+}
+
+/* Carousel Controls */
+.testimonial-controls {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+}
+
+.testimonial-controls button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-controls button:hover {
+    background: white;
+    color: var(--color-secondary);
+}
+
+/* ================================================
+   CTA BANNER SECTION
+   ================================================ */
+
+.cta-section {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: var(--space-3xl) 0;
+    text-align: center;
+    color: white;
+}
+
+.cta-title {
+    font-size: var(--size-h2);
+    margin-bottom: var(--space-md);
+    color: white;
+}
+
+.cta-text {
+    font-size: var(--size-body-lg);
+    max-width: 600px;
+    margin: 0 auto var(--space-xl);
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.cta-btn-primary {
+    background: white;
+    color: var(--color-primary);
+    border: none;
+    padding: var(--space-md) var(--space-xl);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: var(--size-body);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.cta-btn-primary:hover {
+    background: var(--color-neutral-100);
+    transform: scale(1.02);
+}
+
+.cta-btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: var(--space-md) var(--space-xl);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: var(--size-body);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.cta-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
