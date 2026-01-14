@@ -184,9 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ============================================
   // ANIMATION ON SCROLL (Intersection Observer)
-  // ============================================
   const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -210,9 +208,6 @@ document.addEventListener('DOMContentLoaded', function () {
     animateOnScroll.observe(el);
   });
 
-  // ============================================
-  // KEYBOARD NAVIGATION ENHANCEMENTS
-  // ============================================
 
   // Close mobile menu on Escape
   document.addEventListener('keydown', function (e) {
