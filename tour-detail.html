@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/logo.svg" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -852,18 +853,18 @@
         thumb.classList.add("active");
       }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const date = new Date();
-  
-  date.setDate(date.getDate() + 2); 
-  
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
-  const minDate = `${year}-${month}-${day}`;
+      document.addEventListener("DOMContentLoaded", function () {
+        const date = new Date();
 
-  document.getElementById("tour-date").setAttribute("min", minDate);
-});
+        date.setDate(date.getDate() + 2);
+
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+        const minDate = `${year}-${month}-${day}`;
+
+        document.getElementById("tour-date").setAttribute("min", minDate);
+      });
 
       // Itinerary accordion
       function toggleItinerary(header) {
