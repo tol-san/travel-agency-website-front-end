@@ -106,9 +106,7 @@
     color: white;
 }
 
-/* ================================================
-   POPULAR TOURS SECTION
-   ================================================ */
+
 
 .tours-section {
     background: var(--color-neutral-100);
@@ -269,9 +267,6 @@
     color: white;
 }
 
-/* ================================================
-   WHY TRAVEL WITH US SECTION
-   ================================================ */
 
 .features-section {
     background: white;
@@ -314,9 +309,6 @@
     line-height: 1.6;
 }
 
-/* ================================================
-   TESTIMONIALS SECTION
-   ================================================ */
 
 .testimonials-section {
     background: linear-gradient(135deg, var(--color-secondary) 0%, #2a4a6f 100%);
@@ -393,9 +385,6 @@
     color: var(--color-secondary);
 }
 
-/* ================================================
-   CTA BANNER SECTION
-   ================================================ */
 
 .cta-section {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);

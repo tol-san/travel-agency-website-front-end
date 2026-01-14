@@ -621,7 +621,7 @@
                 <div class="review-header">
                   <div class="review-author">
                     <img
-                      src="https://i.pravatar.cc/100?img=32"
+                      src="./assets/images/leader-1.png"
                       alt="Sarah T."
                       class="review-avatar"
                     />
@@ -651,7 +651,7 @@
                 <div class="review-header">
                   <div class="review-author">
                     <img
-                      src="https://i.pravatar.cc/100?img=60"
+                      src="./assets/images/leader-3.png"
                       alt="James L."
                       class="review-avatar"
                     />
@@ -866,13 +866,11 @@
         document.getElementById("tour-date").setAttribute("min", minDate);
       });
 
-      // Itinerary accordion
       function toggleItinerary(header) {
         const day = header.parentElement;
         day.classList.toggle("open");
       }
 
-      // Dynamic pricing
       const travelersSelect = document.getElementById("tour-travelers");
       const totalAmount = document.querySelector(".booking-total .amount");
       const pricePerPerson = 1299;

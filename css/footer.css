@@ -1,6 +1,4 @@
-/* ================================================
-   FOOTER STYLES - Travel Agency
-   ================================================ */
+
 
 .footer {
     background-color: var(--color-secondary);
@@ -100,7 +98,6 @@
     padding-left: var(--space-xs);
 }
 
-/* -------------------- NEWSLETTER -------------------- */
 
 .footer-newsletter {
     background: rgba(255, 255, 255, 0.05);
@@ -191,7 +188,6 @@
     color: white;
 }
 
-/* Language & Currency Selector */
 .footer-selectors {
     display: flex;
     gap: var(--space-md);

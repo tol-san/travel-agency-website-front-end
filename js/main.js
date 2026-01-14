@@ -2,7 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  // NAVBAR SCROLL EFFECT
   const navbar = document.querySelector('.navbar');
 
   function handleNavbarScroll() {
@@ -14,9 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   window.addEventListener('scroll', handleNavbarScroll);
-  handleNavbarScroll(); // Check on load
+  handleNavbarScroll(); 
 
-  // SMOOTH SCROLL FOR ANCHOR LINKS
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
@@ -33,7 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // TESTIMONIAL SLIDER 
+
+
   const testimonials = [
     {
       quote: "Our Bali trip was seamless from start to finish. The local guides knew hidden spots we'd never find alone. Already planning our next adventure!",
@@ -75,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const trip = testimonialCard.querySelector('.testimonial-trip');
     const avatar = testimonialCard.querySelector('.testimonial-avatar');
 
-    // Fade out
     testimonialCard.style.opacity = '0';
 
     setTimeout(() => {
@@ -84,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function () {
       if (trip) trip.textContent = t.trip;
       if (avatar) avatar.src = t.avatar;
 
-      // Fade in
       testimonialCard.style.opacity = '1';
     }, 200);
   }
@@ -100,19 +97,16 @@ document.addEventListener('DOMContentLoaded', function () {
       updateTestimonial();
     });
 
-    // Add transition style
     if (testimonialCard) {
       testimonialCard.style.transition = 'opacity 0.2s ease';
     }
 
-    // Auto-advance every 6 seconds
     setInterval(() => {
       currentTestimonial = (currentTestimonial + 1) % testimonials.length;
       updateTestimonial();
     }, 6000);
   }
 
-  // WISHLIST TOGGLE
   document.querySelectorAll('.tour-card-wishlist').forEach(btn => {
     btn.addEventListener('click', function (e) {
       e.preventDefault();
@@ -133,9 +127,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // ============================================
-  // SEARCH FORM HANDLING
-  // ============================================
+
+
+
   const searchForm = document.querySelector('.hero-search-form');
 
   if (searchForm) {
@@ -147,21 +141,17 @@ document.addEventListener('DOMContentLoaded', function () {
       const travelers = document.getElementById('search-travelers').value;
       const budget = document.getElementById('search-budget').value;
 
-      // Build query string
+
       const params = new URLSearchParams();
       if (destination) params.append('destination', destination);
       if (date) params.append('date', date);
       if (travelers) params.append('travelers', travelers);
       if (budget) params.append('budget', budget);
 
-      // Navigate to tours page with search params
       window.location.href = `tours.html?${params.toString()}`;
     });
   }
 
-  // ============================================
-  // NEWSLETTER FORM
-  // ============================================
   const newsletterForm = document.querySelector('.newsletter-form');
 
   if (newsletterForm) {
@@ -170,7 +160,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const email = this.querySelector('input[type="email"]').value;
 
-      // Show success message (in real app, would send to API)
       const button = this.querySelector('button');
       const originalText = button.textContent;
       button.textContent = 'Subscribed!';
@@ -184,7 +173,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ANIMATION ON SCROLL (Intersection Observer)
   const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -201,7 +189,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }, observerOptions);
 
-  // Observe cards and sections
   document.querySelectorAll('.destination-card, .tour-card, .feature-card').forEach((el, index) => {
     el.classList.add('animate-hidden');
     el.classList.add(`animate-delay-${(index % 4) + 1}`);
@@ -209,7 +196,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-  // Close mobile menu on Escape
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
       const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById('mobileMenu'));
@@ -219,7 +205,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Focus management for dropdowns
   document.querySelectorAll('.dropdown').forEach(dropdown => {
     const toggle = dropdown.querySelector('.dropdown-toggle');
     const menu = dropdown.querySelector('.dropdown-menu');

@@ -1,6 +1,4 @@
 @import url('./tokens.css');
-
-/* -------------------- GOOGLE FONTS -------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap');
 
 
@@ -82,7 +80,6 @@ a:hover {
     color: var(--color-primary-dark);
 }
 
-/* -------------------- SKIP LINK (Accessibility) -------------------- */
 
 .skip-link {
     position: absolute;
