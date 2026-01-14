@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Securely book your dream vacation with TravelCo.">
-    <title>Checkout - TravelCo</title>
+    <title>Checkout - B&G Adventure</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -136,7 +136,7 @@
                     <path d="M8 20H32" stroke="currentColor" stroke-width="2" />
                     <path d="M20 8V32" stroke="currentColor" stroke-width="2" />
                 </svg>
-                TravelCo
+                B&G
             </a>
             <span class="navbar-text ms-auto text-muted">Secure Checkout <i class="bi bi-lock-fill"></i></span>
         </div>
@@ -156,19 +156,19 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label class="form-label">First Name</label>
-                                <input type="text" class="form-control" value="Demo" required>
+                                <input type="text" class="form-control" value="Meow" required>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label">Last Name</label>
-                                <input type="text" class="form-control" value="User" required>
+                                <input type="text" class="form-control" value="Meow" required>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label">Email Address</label>
-                                <input type="email" class="form-control" value="demo@example.com" required>
+                                <input type="email" class="form-control" value="meow@example.com" required>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label">Phone Number</label>
-                                <input type="tel" class="form-control" required>
+                                <input type="tel" class="form-control" value="+855 70 898 889" required>
                             </div>
                         </div>
 
@@ -280,7 +280,7 @@
 
     <footer class="text-center py-4 text-muted small">
         <div class="container">
-            <p>&copy; 2026 TravelCo. All rights reserved.</p>
+            <p>&copy; 2026 B&G Adventure. All rights reserved.</p>
         </div>
     </footer>
 
@@ -292,7 +292,6 @@
         }
 
         function completeBooking() {
-            // Simulate processing
             const btn = document.querySelector('button[onclick="completeBooking()"]');
             const originalText = btn.innerHTML;
             btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Processing...';
